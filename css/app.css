@@ -71,6 +71,12 @@ header .header-navbar__link-section .links ul li i {
   margin-left: 10px;
   font-size: 15px;
 }
+header .header-navbar__link-section .links ul li:hover {
+  color: #EAD758;
+}
+header .header-navbar__link-section .links ul li:hover a {
+  color: #EAD758;
+}
 header .header-navbar__link-section .navbar-button {
   width: 20%;
   height: 100%;
@@ -97,4 +103,17 @@ header .header-navbar__link-section .navbar-button a:hover {
   background-color: #fff;
   border: 1px solid #fff;
   color: #E56768;
+}
+header .hero {
+  width: 100%;
+  height: 460px;
+  border: 1px solid red;
+}
+header .container-clouds {
+  height: 130px;
+  width: 100%;
+  background-image: url(/images/Wave-1.png?7dfbc50abe80bc3c0a80f3267bdc1c6f);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
