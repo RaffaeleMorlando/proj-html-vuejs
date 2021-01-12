@@ -27,6 +27,7 @@ header .header-navbar {
   border: 1px solid red;
   display: flex;
   padding: 30px 50px;
+  font-family: "Fredoka One", cursive;
 }
 header .header-navbar__logo-container {
   width: 20%;
@@ -57,12 +58,18 @@ header .header-navbar__link-section .links ul {
 header .header-navbar__link-section .links ul li {
   display: flex;
   align-items: center;
-  width: 10%;
   height: 100%;
+  margin-right: 30px;
+  color: #fff;
 }
 header .header-navbar__link-section .links ul li a {
   text-decoration: none;
   font-size: 17px;
+  color: #fff;
+}
+header .header-navbar__link-section .links ul li i {
+  margin-left: 10px;
+  font-size: 15px;
 }
 header .header-navbar__link-section .navbar-button {
   width: 20%;
@@ -80,7 +87,14 @@ header .header-navbar__link-section .navbar-button a {
   height: 65px;
   padding: 15px 0;
   border-radius: 50px;
-  border: 1px solid blue;
+  border: 1px solid #EAD758;
+  background-color: #EAD758;
+  color: #fff;
   font-size: 17px;
   text-transform: uppercase;
+}
+header .header-navbar__link-section .navbar-button a:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #E56768;
 }
