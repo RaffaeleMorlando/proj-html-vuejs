@@ -24,7 +24,6 @@ header .background-overlay {
 header .header-navbar {
   width: 100%;
   height: 160px;
-  border: 1px solid red;
   display: flex;
   padding: 30px 50px;
   font-family: "Fredoka One", cursive;
@@ -106,17 +105,41 @@ header .header-navbar__link-section .navbar-button a:hover {
   color: #E56768;
 }
 header .hero {
+  position: relative;
   display: flex;
   width: 100%;
   height: calc(100% - 290px);
-  border: 1px solid red;
+}
+header .hero__left-bar {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  width: 40px;
+  height: 100px;
+  background-color: #EAD758;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.5s ease-in-out;
+}
+header .hero__left-bar:hover {
+  width: 50px;
+  cursor: pointer;
 }
 header .hero .arrow-left, header .hero .arrow-right {
   width: 25%;
   height: 100%;
-  border: 1px solid red;
 }
 header .hero .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 50%;
   height: 100%;
   text-align: center;
@@ -160,6 +183,7 @@ header .hero .center .buttons a:first-child {
 header .hero .center .buttons a:first-child:hover {
   background-color: #fff;
   color: #E56768;
+  cursor: pointer;
 }
 header .hero .center .buttons a:last-child {
   background-color: #fff;
@@ -168,6 +192,7 @@ header .hero .center .buttons a:last-child {
 header .hero .center .buttons a:last-child:hover {
   background-color: #EAD758;
   color: #fff;
+  cursor: pointer;
 }
 header .container-clouds {
   height: 130px;
