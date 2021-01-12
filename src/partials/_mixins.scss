@@ -1,3 +1,6 @@
 @mixin  transitionEase {
     transition: .5s ease-in-out;
 }
+@mixin  transitionFast {
+    transition: .2s ease;
+}
