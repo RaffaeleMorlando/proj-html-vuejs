@@ -293,6 +293,7 @@ main .faculties p {
   word-break: break-all;
 }
 main .faculties__container-box {
+  position: relative;
   width: 100%;
   height: 200px;
   display: flex;
@@ -300,6 +301,7 @@ main .faculties__container-box {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
 }
 main .faculties__container-box .faculty {
+  position: relative;
   width: 235px;
   height: 100%;
   display: flex;
@@ -318,5 +320,22 @@ main .faculties__container-box .faculty span {
   font-size: 16px;
 }
 main .faculties__container-box .faculty:first-child {
+  position: relative;
   background-color: #E56768;
+}
+main .faculties__container-box .faculty:first-child img {
+  filter: brightness(0) invert(1);
+}
+main .faculties__container-box .faculty:first-child span {
+  color: #fff;
+}
+main .faculties__container-box .faculty:first-child .arrow-down-select {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #E56768;
+  transform: rotate(45deg);
 }

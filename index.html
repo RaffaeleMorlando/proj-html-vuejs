@@ -88,11 +88,8 @@
                 <p>A single university with a load of courses, tailored to satisfy any student’s needs.</p>
 
                 <div class="faculties__container-box">
-                    <!-- <div class="faculty"></div>
-                    <div class="faculty"></div>
-                    <div class="faculty"></div>
-                    <div class="faculty"></div> -->
                     <div v-for="item in faculties" class="faculty">
+                        <div class="arrow-down-select"></div>
                         <img :src="item.img" alt="">
                         <span>{{item.title}}</span>
                     </div>

@@ -86,12 +86,14 @@ main {
             word-break: break-all;
         }
         &__container-box{
+            position: relative;
             width: 100%;
             height: 200px;
             display: flex;
             justify-content: center;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
             .faculty {
+                position: relative;
                 width: 235px;
                 height: 100%;
                 display: flex;
@@ -110,9 +112,26 @@ main {
                 }
             }
             .faculty:first-child {
+                position: relative;
                 background-color: $pinkPrimary;
-
+                img {
+                    filter: brightness(0) invert(1);
+                }
+                span {
+                    color: $whiteTextPrimary;
+                }
+                .arrow-down-select {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: -10px;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #E56768;
+                    transform: rotate(45deg);
+                }
             }
+            
         }
     }
 
