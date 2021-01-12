@@ -111,7 +111,7 @@ header .hero {
   height: calc(100% - 290px);
 }
 header .hero__left-bar {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -125,6 +125,8 @@ header .hero__left-bar {
   background-color: #EAD758;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  box-shadow: 0 0 25px rgba(37, 37, 37, 0.4);
+  z-index: 1;
   transition: 0.5s ease-in-out;
 }
 header .hero__left-bar:hover {
@@ -388,4 +390,37 @@ main .faculties .faculty-info-container #faculty-info-container-text a:hover {
 }
 main .faculties .bottom-wave {
   width: 100%;
+  overflow: hidden;
+}
+main .faculties .bottom-wave svg {
+  width: 2216pt;
+  height: 140pt;
+  transform: rotate(180deg);
+}
+main .faculties .bottom-wave svg g {
+  transform: translate(0, 140) scale(0.1, -0.1);
+}
+main .university-year {
+  width: 100%;
+  height: 500px;
+  background-color: #E56768;
+}
+main .university-year__container {
+  width: 60%;
+  margin: auto;
+  border: 1px solid red;
+}
+main .university-year__container .university-year_icon {
+  width: 10%;
+  margin: auto;
+}
+main .university-year__container .university-year_icon img {
+  width: 80%;
+}
+main .university-year__container h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+  margin: 20px 0;
 }
