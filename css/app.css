@@ -310,11 +310,19 @@ main .faculties__container-box .faculty {
   justify-content: center;
   border: 1px solid #e6e4e4;
 }
-main .faculties__container-box .faculty img {
+main .faculties__container-box .faculty a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+main .faculties__container-box .faculty a img {
   width: 40%;
   margin-bottom: 20px;
 }
-main .faculties__container-box .faculty span {
+main .faculties__container-box .faculty a span {
   font-family: "Fredoka One", cursive;
   color: #E56768;
   font-size: 16px;
