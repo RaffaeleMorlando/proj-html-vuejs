@@ -214,6 +214,7 @@ main .browser-courses {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 20px;
 }
 main .browser-courses__container {
   width: 60%;
@@ -223,7 +224,7 @@ main .browser-courses__container {
   align-items: center;
 }
 main .browser-courses__container__text {
-  width: 60%;
+  width: 50%;
   height: 90%;
 }
 main .browser-courses__container__text .brw-course-cont-img {
@@ -244,6 +245,8 @@ main .browser-courses__container__text p {
   color: #3D414F;
   margin-top: 20px;
   margin-bottom: 20px;
+  line-height: 30px;
+  padding-right: 10px;
 }
 main .browser-courses__container__text a {
   text-decoration: none;
@@ -259,7 +262,12 @@ main .browser-courses__container__text a {
 main .browser-courses__container__text a:hover {
   background-color: #dd3333;
 }
-main .browser-courses__container__img {
-  width: 40%;
+main .browser-courses__container .browser-courses__container_img {
+  width: 50%;
   height: 100%;
+  display: flex;
+  align-items: center;
+}
+main .browser-courses__container .browser-courses__container_img img {
+  width: 100%;
 }

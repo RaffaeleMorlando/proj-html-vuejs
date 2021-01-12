@@ -8,6 +8,7 @@ main {
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        margin-top: 20px;
         &__container {
             width: $widthContainerContent;
             height: 100%;
@@ -15,7 +16,7 @@ main {
             display: flex;
             align-items: center;
             &__text {
-                width: 60%;
+                width: 50%;
                 height: 90%;
                 .brw-course-cont-img {
                     width: 100%;
@@ -35,6 +36,8 @@ main {
                     color: $colorH1;
                     margin-top: 20px;
                     margin-bottom: 20px;
+                    line-height: 30px;
+                    padding-right: 10px;
                 }
                 a {
                     text-decoration: none;
@@ -51,9 +54,14 @@ main {
                     }
                 }
             }
-            &__img {
-                width: 40%;
+            .browser-courses__container_img {
+                width: 50%;
                 height: 100%;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 100%;
+                }
             }
         }
     }
