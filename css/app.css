@@ -205,11 +205,10 @@ header .container-clouds {
 
 main {
   width: 100%;
-  height: 500px;
 }
 main .browser-courses {
   width: 100%;
-  height: 100%;
+  height: 500px;
   background-image: url(/images/home-background.png?f34f2cb3581cb432451838c2a18145d2);
   background-size: contain;
   background-position: center;
