@@ -8,5 +8,3 @@ const app = new Vue(
     }
   }
 );
-
-console.log('hello');
