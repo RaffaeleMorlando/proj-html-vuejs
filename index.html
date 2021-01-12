@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>EduPrime</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-    <script src="js/main.js"></script>
 </head>
 <body>
     <div id="app">
@@ -24,13 +23,14 @@
                         <div class="header-navbar__link-section">
                             <div class="links">
                                 <ul>
-                                    <li class="active"><a href="#">Home</a><i class="fas fa-caret-down"></i></li>
+                                    <!-- <li><a href="#">Home</a><i class="fas fa-caret-down"></i></li>
                                     <li><a href="#">Courses</a><i class="fas fa-caret-down"></i></li>
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="#">News</a><i class="fas fa-caret-down"></i></li>
                                     <li><a href="#">Pages</a><i class="fas fa-caret-down"></i></li>
                                     <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Purchase</a></li>
+                                    <li><a href="#">Purchase</a></li> -->
+                                    <li v-for="item in linkNavbar"><a href="#">{{item}}</a></li>
                                 </ul>
                             </div>
                             <div class="navbar-button">
@@ -71,5 +71,7 @@
         <footer>
         </footer>
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
