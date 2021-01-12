@@ -66,6 +66,7 @@
         </header>
     
         <main>
+
             <section class="browser-courses">
                 <div class="browser-courses__container">
                     <div class="browser-courses__container__text">
@@ -81,6 +82,23 @@
                     </div>
                 </div>
             </section>
+
+            <section class="faculties">
+                <h1>Faculties available at EduPrime</h1>
+                <p>A single university with a load of courses, tailored to satisfy any student’s needs.</p>
+
+                <div class="faculties__container-box">
+                    <!-- <div class="faculty"></div>
+                    <div class="faculty"></div>
+                    <div class="faculty"></div>
+                    <div class="faculty"></div> -->
+                    <div v-for="item in faculties" class="faculty">
+                        <img :src="item.img" alt="">
+                        <span>{{item.title}}</span>
+                    </div>
+                </div>
+            </section>
+
         </main>
     
         <footer>
