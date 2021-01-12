@@ -98,6 +98,7 @@ header .header-navbar__link-section .navbar-button a {
   color: #fff;
   font-size: 17px;
   text-transform: uppercase;
+  transition: 0.5s ease-in-out;
 }
 header .header-navbar__link-section .navbar-button a:hover {
   background-color: #fff;
@@ -105,9 +106,68 @@ header .header-navbar__link-section .navbar-button a:hover {
   color: #E56768;
 }
 header .hero {
+  display: flex;
   width: 100%;
-  height: 460px;
+  height: calc(100% - 290px);
   border: 1px solid red;
+}
+header .hero .arrow-left, header .hero .arrow-right {
+  width: 25%;
+  height: 100%;
+  border: 1px solid red;
+}
+header .hero .center {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+header .hero .center h1 {
+  font-size: 60px;
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+}
+header .hero .center p {
+  margin: 30px 0;
+  padding: 0px 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  line-height: 30px;
+}
+header .hero .center .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+header .hero .center .buttons a {
+  display: inline-block;
+  padding: 20px 45px;
+  border-radius: 50px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Fredoka One", cursive;
+  transition: 0.5s ease-in-out;
+}
+header .hero .center .buttons a i {
+  padding-right: 10px;
+}
+header .hero .center .buttons a:first-child {
+  background-color: #EAD758;
+  color: #fff;
+}
+header .hero .center .buttons a:first-child:hover {
+  background-color: #fff;
+  color: #E56768;
+}
+header .hero .center .buttons a:last-child {
+  background-color: #fff;
+  color: #E56768;
+}
+header .hero .center .buttons a:last-child:hover {
+  background-color: #EAD758;
+  color: #fff;
 }
 header .container-clouds {
   height: 130px;

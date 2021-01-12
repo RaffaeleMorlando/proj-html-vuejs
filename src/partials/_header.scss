@@ -91,6 +91,7 @@ header {
                     color: $whiteTextPrimary;
                     font-size: 17px;
                     text-transform: uppercase;
+                    @include transitionEase;
 
                     &:hover {
                         background-color: $whiteTextPrimary;
@@ -102,9 +103,68 @@ header {
         }
     }
     .hero {
+        display: flex;
         width: 100%;
-        height: 460px;
+        height: calc(100% - 290px);
         border: 1px solid red;
+        .arrow-left, .arrow-right {
+            width: 25%;
+            height: 100%;
+            border: 1px solid red;
+        }
+        .center {
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            h1 {
+                font-size: 60px;
+                color: $whiteTextPrimary;
+                font-family: $fredokaFamily;
+            }
+            p {
+                margin: 30px 0;
+                padding: 0px 10px;
+                font-family: $sourceSansProFamily;
+                color: $whiteTextPrimary;
+                line-height: 30px;
+            }
+            .buttons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100px;
+                a {
+                    display: inline-block;
+                    padding: 20px 45px;
+                    border-radius: 50px;
+                    margin-left: 10px;
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-family: $fredokaFamily;
+                    @include transitionEase;
+                    i {
+                        padding-right: 10px;
+                    }
+                }
+                a:first-child {
+                    background-color: $yellowBrand;
+                    color: $whiteTextPrimary;
+                    &:hover {
+                        background-color: $whiteTextPrimary;
+                        color: $pinkPrimary;
+                    }
+                }
+                a:last-child {
+                    background-color: $whiteTextPrimary;
+                    color: $pinkPrimary;
+                    &:hover {
+                        background-color: $yellowBrand;
+                        color: $whiteTextPrimary;
+                    }
+                }
+            }
+        }
     }
     .container-clouds {
         height: 130px;
