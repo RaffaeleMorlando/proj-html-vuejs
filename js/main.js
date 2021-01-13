@@ -79,8 +79,17 @@ const app = new Vue(
           'teacher': 'James Colins',
           'price': 'Free'
         }
+      ],
+      partnersLogos: [
+        'img/partner-2.png',
+        'img/partner-3.png',
+        'img/partner-4.png',
+        'img/partner-5.png',
+        'img/partner-6.png',
+        'img/partner-8.png',
+        'img/partner-1.png',
+        'img/partner-7.png'
       ]
-
     }
   }
 );

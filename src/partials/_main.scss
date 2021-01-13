@@ -679,10 +679,42 @@ main {
     .partners {
         width: 100%;
         height: 580px;
-        height: 400px;
-        background-color: rgba(211, 211, 211, 0.276);
-        background-image: url('../../img/background-wave3.png');
-        background-size: cover;
-        background-repeat: no-repeat;
+        // background-color: rgba(211, 211, 211, 0.276);
+        // background-image: url('../../img/background-wave3.png');
+        // background-size:auto;
+        // background-repeat: no-repeat;
+        // background-position: center bottom;
+
+        h1 {
+            padding: 50px 0;
+            text-align: center;
+            font-size: $fontSizeH1;
+            font-family: $fredokaFamily;
+            color: $colorH1;
+        }
+        p {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            line-height: 30px;
+            font-family: $sourceSansProFamily;
+            margin-bottom: 30px;
+        }
+        .partners-logo-container {
+            width: 80%;
+            height: 50px;
+            margin: auto;
+           .logo-partner {
+               display: inline-block;
+               width: calc(100% / 8);
+               height: 100%;
+               img {
+                   width: 100%;
+                   height: 100%;
+                   object-fit: contain;
+                   object-position: center;
+               }
+           }
+        }
     }
 }
