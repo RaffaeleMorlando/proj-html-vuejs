@@ -893,4 +893,11 @@ main .partners .partners-logo-container .logo-partner img {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+  opacity: 0.5;
+}
+main .partners .partners-logo-container .logo-partner:hover {
+  cursor: pointer;
+}
+main .partners .partners-logo-container .logo-partner:hover img {
+  opacity: 1;
 }

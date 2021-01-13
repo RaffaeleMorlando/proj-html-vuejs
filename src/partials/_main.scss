@@ -713,6 +713,13 @@ main {
                    height: 100%;
                    object-fit: contain;
                    object-position: center;
+                   opacity: .5;
+               }
+               &:hover {
+                   cursor: pointer;
+                   img {
+                       opacity: 1;
+                   }
                }
            }
         }
