@@ -599,3 +599,65 @@ main .latest-courses .latest-courses-wave {
 main .latest-courses .latest-courses-wave svg {
   transform: rotate(360deg);
 }
+main .latest-courses .courses-container {
+  width: 80%;
+  margin: auto;
+}
+main .latest-courses .courses-container h1 {
+  width: 100%;
+  font-size: 45px;
+  color: #3D414F;
+  font-family: "Fredoka One", cursive;
+  margin-bottom: 30px;
+}
+main .latest-courses .courses-container .course-info-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .latest-courses .courses-container .course-info-container .course-info {
+  display: flex;
+  width: 300px;
+  height: 265px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .latest-courses .courses-container .course-info-container .course-info img {
+  width: 72px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+main .latest-courses .courses-container .course-info-container .course-info a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #3D414F;
+  font-family: "Fredoka One", cursive;
+  margin-bottom: 20px;
+}
+main .latest-courses .courses-container .course-info-container .course-info .author {
+  margin-bottom: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: #a6a6a7;
+}
+main .latest-courses .courses-container .course-info-container .course-info .author span {
+  color: #5C5E6C;
+  font-weight: 700;
+}
+main .latest-courses .courses-container .course-info-container .course-info .price {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: #a6a6a7;
+}
+main .latest-courses .courses-container .course-info-container .course-info .price span {
+  color: #5C5E6C;
+  font-weight: 700;
+}

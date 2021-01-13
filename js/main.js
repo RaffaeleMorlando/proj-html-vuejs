@@ -1,5 +1,3 @@
-// const { vue } = require("laravel-mix");
-
 const app = new Vue(
   {
     el: '#app',
@@ -55,7 +53,34 @@ const app = new Vue(
           'img': 'img/Palette-tabs-v2.png',
           'title': 'Graphic Design'
         }
+      ],
+      latestCourse: [
+        {
+          'img': 'img/Decisions-icon.png',
+          'title': 'Make Better Decisions',
+          'teacher': 'James Colins',
+          'price': '$21.00'
+        },
+        {
+          'img': 'img/Speaker-icon.png',
+          'title': 'How to be a speaker',
+          'teacher': 'James Colins',
+          'price': 'Free'
+        },
+        {
+          'img': 'img/Network-icon.png',
+          'title': 'Network Introductions',
+          'teacher': 'James Colins',
+          'price': 'Free'
+        },
+        {
+          'img': 'img/Brand-icon.png',
+          'title': 'Brand Management',
+          'teacher': 'James Colins',
+          'price': 'Free'
+        }
       ]
+
     }
   }
 );

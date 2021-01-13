@@ -395,9 +395,6 @@ main {
     .latest-courses {
         width: 100%;
         background: linear-gradient(180deg, rgba(229,103,104,1) .2%, rgba(255,255,255,1) .2%);
-        // padding-top: 80px;
-        // background-color: $pinkPrimary;
-        // height: 500px;
         .latest-courses-wave {
             width: 100%;
             overflow: hidden;
@@ -409,5 +406,71 @@ main {
             }
             
         }
+        .courses-container {
+            width: 80%;
+            margin: auto;
+            h1 {
+                width: 100%;
+                font-size: $fontSizeH1;
+                color: $colorH1;
+                font-family: $fredokaFamily;
+                margin-bottom: 30px;
+            }
+            
+            .course-info-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+    
+                .course-info {
+                    display: flex;
+                    width: 300px;
+                    height: 265px;
+                    background-color: $whiteTextPrimary;
+                    border-radius: 5px;
+                    // border: 1px solid red;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+                    margin-right: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 72px;
+                        height: 70px;
+                        margin-bottom: 20px;
+                    }
+                    a {
+                        text-decoration: none;
+                        font-size: $fontSizeH6;
+                        color: $colorH1;
+                        font-family: $fredokaFamily;
+                        margin-bottom: 20px;
+                    }
+                    .author {
+                        margin-bottom: 20px;
+                        font-family: $sourceSansProFamily;
+                        font-weight: 200;
+                        font-size: 14px;
+                        color: #a6a6a7;
+                        span {
+                            color: #5C5E6C;
+                            font-weight: 700;
+                        }
+                    }
+                    .price {;
+                        font-family: $sourceSansProFamily;
+                        font-weight: 200;
+                        font-size: 14px;
+                        color: #a6a6a7;
+                        span {
+                            color: #5C5E6C;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
