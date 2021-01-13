@@ -839,8 +839,8 @@ main .newsletter .newsletter-container .newsletter-input-container input {
 main .newsletter .newsletter-container .newsletter-input-container button {
   position: absolute;
   right: 20px;
-  height: 70px;
-  width: 70px;
+  height: 75px;
+  width: 75px;
   border-radius: 50px;
   border: none;
   background-color: #EAD758;
@@ -848,7 +848,21 @@ main .newsletter .newsletter-container .newsletter-input-container button {
   color: #fff;
   outline: none;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+  transition: 0.2s ease;
 }
 main .newsletter .newsletter-container .newsletter-input-container button i {
   font-size: 20px;
+}
+main .newsletter .newsletter-container .newsletter-input-container button:hover {
+  background-color: #E56768;
+  cursor: pointer;
+}
+main .partners {
+  width: 100%;
+  height: 580px;
+  height: 400px;
+  background-color: rgba(211, 211, 211, 0.276);
+  background-image: url(/images/background-wave3.png?96eb19e7e0cdad20885acaf38535d201);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
