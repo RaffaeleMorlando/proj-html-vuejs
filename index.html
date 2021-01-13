@@ -197,8 +197,9 @@
                     <h1>Latest Courses</h1>
                     <div class="course-info-container">
                         <div v-for="course in latestCourse" class="course-info">
+                            <a id="button-view-more" href="#"><i class="far fa-eye"></i>View Course</a>
                             <img :src="course.img" alt="">
-                            <a href="#">{{course.title}}</a>
+                            <a id="title-course" href="#">{{course.title}}</a>
                             <div class="author">
                                 <i class="far fa-user"></i>
                                 Teacher:
