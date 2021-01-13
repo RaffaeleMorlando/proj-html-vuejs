@@ -4,7 +4,36 @@ const app = new Vue(
   {
     el: '#app',
     data: {
-      linkNavbar: ['Home','Courses','About Us','News','Pages','Contact','Purchase'],
+      itemNavbarHeader: [
+        {
+          'section': 'Home',
+          'dropdown': true
+        },
+        {
+          'section': 'Courses',
+          'dropdown': true
+        },
+        {
+          'section': 'About Us',
+          'dropdown': false
+        },
+        {
+          'section': 'News',
+          'dropdown': true
+        },
+        {
+          'section': 'Pages',
+          'dropdown': true
+        },
+        {
+          'section': 'Contact',
+          'dropdown': true
+        },
+        {
+          'section': 'Purchase',
+          'dropdown': true
+        },
+      ],
       faculties: [
         {
           'img':'img/Gavel-v2.png',

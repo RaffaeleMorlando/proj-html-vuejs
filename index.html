@@ -30,7 +30,11 @@
                                     <li><a href="#">Pages</a><i class="fas fa-caret-down"></i></li>
                                     <li><a href="#">Contact</a></li>
                                     <li><a href="#">Purchase</a></li> -->
-                                    <li v-for="item in linkNavbar"><a href="#">{{item}}</a></li>
+                                    <!-- <li v-for="item in linkNavbar"><a href="#">{{item}}</a></li> -->
+                                    <li v-for="item in itemNavbarHeader">
+                                        <a href="#">{{item.section}}</a>
+                                        <i  v-if="item.dropdown === true" class="fas fa-caret-down"></i>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="navbar-button">
