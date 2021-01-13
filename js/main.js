@@ -89,6 +89,20 @@ const app = new Vue(
         'img/partner-8.png',
         'img/partner-1.png',
         'img/partner-7.png'
+      ],
+      footerLinkSectionOne: ['Request a website',
+      'Browse Themes', 
+      'Payment options', 
+      'Support System', 
+      'Checkout', 
+      'Purchase Theme'],
+      footerLinkSectionTwo: [
+        'Purchase Theme',
+        'Our Benefits',
+        'Our Team',
+        'Our Services',
+        'Other Products',
+        'My account'
       ]
     }
   }
