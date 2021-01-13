@@ -219,7 +219,7 @@ main .browser-courses {
   margin-bottom: 100px;
 }
 main .browser-courses__container {
-  width: 60%;
+  width: 80%;
   height: 100%;
   margin: auto;
   display: flex;
@@ -410,7 +410,7 @@ main .university-year #university-year__container .university-year_icon {
   text-align: center;
 }
 main .university-year #university-year__container .university-year_icon img {
-  width: 50%;
+  width: 70px;
   margin-top: 80px;
 }
 main .university-year #university-year__container h1 {
@@ -478,4 +478,92 @@ main .university-year #university-year__container .time-line-bottom .time-line-b
   font-family: "Source Sans Pro", sans-serif;
   color: rgba(255, 255, 255, 0.8);
   line-height: 25px;
+}
+main .upcoming-events {
+  width: 100%;
+  height: 700px;
+  background-color: #E56768;
+  padding-top: 80px;
+}
+main .upcoming-events-icon {
+  width: 50%;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+}
+main .upcoming-events-icon img {
+  width: 70px;
+}
+main .upcoming-events h1 {
+  text-align: center;
+  font-size: 45px;
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+  margin-bottom: 50px;
+}
+main .upcoming-events .container-boxes-events {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .upcoming-events .container-boxes-events .box-event {
+  position: relative;
+  width: 360px;
+  height: 210px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 10px 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+}
+main .upcoming-events .container-boxes-events .box-event #button-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 50px;
+  background-color: #E56768;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 50px;
+  padding: 10px 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+  transition: 0.2s ease;
+}
+main .upcoming-events .container-boxes-events .box-event #button-box:hover {
+  background-color: #EAD758;
+  color: #fff;
+}
+main .upcoming-events .container-boxes-events .box-event #button-box i {
+  margin-right: 5px;
+}
+main .upcoming-events .container-boxes-events .box-event a {
+  display: block;
+  text-decoration: none;
+  color: #3D414F;
+  font-size: 28px;
+  font-family: "Fredoka One", cursive;
+  margin-bottom: 20px;
+}
+main .upcoming-events .container-boxes-events .box-event span {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #70727E;
+}
+main .upcoming-events .container-boxes-events .box-event span i {
+  margin-right: 5px;
+}
+main .upcoming-events .container-boxes-events .box-event p {
+  height: 50px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #70727E;
 }
