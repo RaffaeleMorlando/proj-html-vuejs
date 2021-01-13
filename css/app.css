@@ -747,6 +747,7 @@ main .variables-fees {
   margin: auto;
   display: flex;
   padding-top: 50px;
+  margin-bottom: 80px;
 }
 main .variables-fees .variables-fees-img {
   width: 50%;
@@ -795,4 +796,59 @@ main .variables-fees .variables-fees-text a {
 }
 main .variables-fees .variables-fees-text a:hover {
   background-color: #EAD758;
+}
+main .newsletter {
+  width: 100%;
+  height: 180px;
+  background-color: #E56768;
+}
+main .newsletter .newsletter-container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+main .newsletter .newsletter-container .cta-newsletter {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+}
+main .newsletter .newsletter-container .newsletter-input-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+main .newsletter .newsletter-container .newsletter-input-container input {
+  display: block;
+  width: 90%;
+  height: 70px;
+  border-radius: 50px;
+  border: none;
+  margin: auto;
+  padding: 20px 20px;
+  outline: none;
+  font-family: "Source Sans Pro", sans-serif;
+}
+main .newsletter .newsletter-container .newsletter-input-container button {
+  position: absolute;
+  right: 20px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  border: none;
+  background-color: #EAD758;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+}
+main .newsletter .newsletter-container .newsletter-input-container button i {
+  font-size: 20px;
 }
