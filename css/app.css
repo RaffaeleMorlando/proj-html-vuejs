@@ -391,6 +391,7 @@ main .faculties .faculty-info-container #faculty-info-container-text a:hover {
 main .faculties .bottom-wave {
   width: 100%;
   overflow: hidden;
+  background: linear-gradient(0deg, #e56768 4%, white 6%);
 }
 main .faculties .bottom-wave svg {
   width: 2216pt;
@@ -566,4 +567,35 @@ main .upcoming-events .container-boxes-events .box-event p {
   overflow: hidden;
   font-family: "Source Sans Pro", sans-serif;
   color: #70727E;
+}
+main .upcoming-events .button-more-events {
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+}
+main .upcoming-events .button-more-events a {
+  text-decoration: none;
+  padding: 25px 45px;
+  background-color: #EAD758;
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+  transition: 0.2s ease;
+}
+main .upcoming-events .button-more-events a:hover {
+  background-color: #E56768;
+  color: #fff;
+}
+main .latest-courses {
+  width: 100%;
+  background: linear-gradient(180deg, #e56768 0.2%, white 0.2%);
+}
+main .latest-courses .latest-courses-wave {
+  width: 100%;
+  overflow: hidden;
+}
+main .latest-courses .latest-courses-wave svg {
+  transform: rotate(360deg);
 }
