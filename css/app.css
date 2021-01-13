@@ -237,7 +237,7 @@ main .browser-courses__container__text .brw-course-cont-img img {
   width: 10%;
 }
 main .browser-courses__container__text h1 {
-  font-size: 40px;
+  font-size: 45px;
   font-family: "Fredoka One", cursive;
   color: #3D414F;
   margin-bottom: 20px;
@@ -271,7 +271,7 @@ main .browser-courses__container .browser-courses__container_img {
   align-items: center;
 }
 main .browser-courses__container .browser-courses__container_img img {
-  width: 100%;
+  max-width: 500px;
 }
 main .faculties {
   width: 100%;
@@ -279,7 +279,7 @@ main .faculties {
 main .faculties h1 {
   text-align: center;
   color: #3D414F;
-  font-size: 40px;
+  font-size: 45px;
   font-family: "Fredoka One", cursive;
 }
 main .faculties p {
@@ -402,25 +402,80 @@ main .faculties .bottom-wave svg g {
 }
 main .university-year {
   width: 100%;
-  height: 500px;
   background-color: #E56768;
 }
-main .university-year__container {
-  width: 60%;
-  margin: auto;
-  border: 1px solid red;
-}
-main .university-year__container .university-year_icon {
+main .university-year #university-year__container .university-year_icon {
   width: 10%;
   margin: auto;
-}
-main .university-year__container .university-year_icon img {
-  width: 80%;
-}
-main .university-year__container h1 {
   text-align: center;
-  font-size: 40px;
+}
+main .university-year #university-year__container .university-year_icon img {
+  width: 50%;
+  margin-top: 80px;
+}
+main .university-year #university-year__container h1 {
+  text-align: center;
+  font-size: 45px;
   color: #fff;
   font-family: "Fredoka One", cursive;
   margin: 20px 0;
+}
+main .university-year #university-year__container .time-line-top {
+  width: 1200px;
+  margin: auto;
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+main .university-year #university-year__container .time-line-top .time-line-top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 39%;
+  text-align: center;
+}
+main .university-year #university-year__container .time-line-top .time-line-top-content h6 {
+  font-size: 18px;
+  font-family: "Fredoka One", cursive;
+  color: #fff;
+  margin-bottom: 20px;
+}
+main .university-year #university-year__container .time-line-top .time-line-top-content p {
+  width: 90%;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 25px;
+}
+main .university-year #university-year__container .timeline-container {
+  width: 100%;
+  text-align: center;
+}
+main .university-year #university-year__container .timeline-container img {
+  margin: 0 50px;
+}
+main .university-year #university-year__container .time-line-bottom {
+  width: 1200px;
+  margin: auto;
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+}
+main .university-year #university-year__container .time-line-bottom .time-line-bottom-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 38%;
+  text-align: center;
+}
+main .university-year #university-year__container .time-line-bottom .time-line-bottom-content h6 {
+  font-size: 18px;
+  font-family: "Fredoka One", cursive;
+  color: #fff;
+  margin-bottom: 20px;
+}
+main .university-year #university-year__container .time-line-bottom .time-line-bottom-content p {
+  width: 90%;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 25px;
 }
