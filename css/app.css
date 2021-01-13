@@ -686,3 +686,57 @@ main .latest-courses .courses-container .course-info-container .course-info .pri
   color: #5C5E6C;
   font-weight: 700;
 }
+main .examination-method {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  display: flex;
+}
+main .examination-method .examination-method-text {
+  width: 50%;
+  height: 100%;
+}
+main .examination-method .examination-method-text .examination-method-text-icon {
+  width: 100%;
+}
+main .examination-method .examination-method-text .examination-method-text-icon img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+main .examination-method .examination-method-text h1 {
+  font-size: 45px;
+  color: #3D414F;
+  font-family: "Fredoka One", cursive;
+  margin-bottom: 30px;
+}
+main .examination-method .examination-method-text p {
+  width: 80%;
+  line-height: 30px;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 30px;
+  color: #3D414F;
+}
+main .examination-method .examination-method-text a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 45px;
+  background-color: #dd3333;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: 0.2s ease;
+}
+main .examination-method .examination-method-text a:hover {
+  background-color: #EAD758;
+}
+main .examination-method .examination-method-img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+main .examination-method .examination-method-img img {
+  max-width: 500px;
+}
