@@ -83,6 +83,9 @@ header {
                         border-radius: 10px;
                         z-index: 1;
                         box-shadow: 0 0 20px rgba(67, 73, 89, .1);
+                        .animate__animated.animate__fadeInUp {
+                            --animate-duration: 1s;
+                        }
                         ul {
                             width: 100%;
                             list-style: none;

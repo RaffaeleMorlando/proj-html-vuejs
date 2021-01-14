@@ -135,6 +135,7 @@ const app = new Vue(
       ],
       dropdown: false,
       dropdownOpen: false,
+      animation: 'animate__animated animate__fadeOutDown dropdown-container',
       currentItem: null,
       showArrow: false
     },
@@ -156,6 +157,7 @@ const app = new Vue(
       showDropdown: function(index) {
         this.currentItem = index;
         this.dropdownOpen = true;
+        this.animation = 'animate__animated animate__fadeInUp dropdown-container';
       },
     }
   }

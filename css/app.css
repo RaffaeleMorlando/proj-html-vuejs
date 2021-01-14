@@ -94,6 +94,9 @@ header .header-navbar__link-section .links ul .dropdown-container {
   z-index: 1;
   box-shadow: 0 0 20px rgba(67, 73, 89, 0.1);
 }
+header .header-navbar__link-section .links ul .dropdown-container .animate__animated.animate__fadeInUp {
+  --animate-duration: 1s;
+}
 header .header-navbar__link-section .links ul .dropdown-container ul {
   width: 100%;
   list-style: none;

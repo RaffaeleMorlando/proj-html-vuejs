@@ -33,7 +33,7 @@
                                         <a href="#">{{item.section}}</a>
                                         <i  v-if="item.dropdown === true" class="fas fa-caret-down"></i>
                                         <div v-show="item.dropdown === true && index == currentItem" 
-                                        class="animate__animated animate__fadeInUp dropdown-container"
+                                        :class="animation"
                                         >
                                             <ul>
                                                 <li v-for="item in dropdownList">{{item}}</li>
