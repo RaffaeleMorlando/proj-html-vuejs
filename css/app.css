@@ -721,7 +721,7 @@ main .examination-method .examination-method-text a {
   text-decoration: none;
   display: inline-block;
   padding: 20px 45px;
-  background-color: #dd3333;
+  background-color: #E56768;
   border-radius: 50px;
   color: #fff;
   font-family: "Fredoka One", cursive;
@@ -786,7 +786,7 @@ main .variables-fees .variables-fees-text a {
   text-decoration: none;
   display: inline-block;
   padding: 20px 45px;
-  background-color: #dd3333;
+  background-color: #E56768;
   border-radius: 50px;
   color: #fff;
   font-family: "Fredoka One", cursive;
@@ -860,6 +860,9 @@ main .newsletter .newsletter-container .newsletter-input-container button:hover 
 main .partners {
   width: 100%;
   height: 580px;
+  background-image: url(/images/curva-grigia-580px.png?7505e161d7c04b44c6d7cfe17d60796d);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 main .partners h1 {
   padding: 50px 0;
@@ -908,47 +911,154 @@ footer {
   background-color: #E56768;
 }
 footer .footer-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   width: 80%;
-  height: 100%;
-  margin: auto;
+  height: 370px;
   display: flex;
+  justify-content: center;
+  margin: auto;
 }
-footer .footer-container .sub-footer {
+footer .footer-container .footer-left {
+  display: inline-block;
   width: 33.333%;
-  height: 100%;
-  border: 1px solid red;
+}
+footer .footer-container .footer-left .footer-left-container-img {
+  width: 100%;
+  height: 33.333%;
   display: flex;
   align-items: center;
 }
-footer .footer-container .sub-footer .link-section {
+footer .footer-container .footer-left .footer-left-container-img img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+footer .footer-container .footer-left p {
+  height: 33.333%;
+  line-height: 30px;
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  padding-right: 20px;
+}
+footer .footer-container .footer-left .social-logo {
+  width: 100%;
+  height: 33.333%;
+  display: flex;
+}
+footer .footer-container .footer-left .social-logo a {
+  text-decoration: none;
+}
+footer .footer-container .footer-left .social-logo a i {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #EAD758;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: #fff;
+}
+footer .footer-container .footer-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.333%;
+}
+footer .footer-container .footer-center .link-section {
   width: 50%;
 }
-footer .footer-container .sub-footer .link-section h4 {
+footer .footer-container .footer-center .link-section h4 {
   font-size: 18px;
   margin-bottom: 20px;
   font-family: "Fredoka One", cursive;
   color: #fff;
 }
-footer .footer-container .sub-footer .link-section ul {
+footer .footer-container .footer-center .link-section ul {
   list-style: none;
 }
-footer .footer-container .sub-footer .link-section ul li {
+footer .footer-container .footer-center .link-section ul li {
   margin-bottom: 20px;
+}
+footer .footer-container .footer-center .link-section ul li a {
+  text-decoration: none;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
   color: #fff;
 }
-footer .footer-container .sub-footer .footer-left-container-img {
+footer .footer-container .footer-right {
+  width: 33.333%;
+}
+footer .footer-container .footer-right-input-container {
+  position: relative;
   width: 100%;
-  height: 50px;
+  padding: 20px 10px;
 }
-footer .footer-container .sub-footer .footer-left-container-img img {
-  width: 60%;
-  margin-bottom: 20px;
-}
-footer .footer-container .sub-footer .footer-left-container-img p {
-  line-height: 30px;
-  font-size: 14px;
+footer .footer-container .footer-right-input-container input {
+  display: block;
+  width: 90%;
+  height: 70px;
+  border-radius: 50px;
+  border: none;
+  margin: auto;
+  padding: 20px 20px;
+  outline: none;
   font-family: "Source Sans Pro", sans-serif;
+}
+footer .footer-container .footer-right-input-container button {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  border: none;
+  background-color: #EAD758;
+  font-size: 20px;
   color: #fff;
+  outline: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+  transition: 0.2s ease;
+}
+footer .footer-container .footer-right-input-container button i {
+  font-size: 20px;
+}
+footer .footer-container .footer-right-input-container button:hover {
+  background-color: #E56768;
+  cursor: pointer;
+}
+footer .footer-container .footer-right h4 {
+  font-size: 14px;
+  font-family: "Fredoka One", cursive;
+  color: #fff;
+  text-align: end;
+  padding: 20px 40px;
+}
+footer .footer-container .footer-right .categories-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+footer .footer-container .footer-right .categories-container .cat {
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 6px 15px;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+footer .footer-container .footer-right .categories-container .cat a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .footer-container .footer-right .categories-container .cat:hover {
+  background-color: #EAD758;
+  border: none;
+  transition: 0.2s ease;
 }

@@ -534,7 +534,7 @@ main {
                 text-decoration: none;
                 display: inline-block;
                 padding: 20px 45px;
-                background-color:  #dd3333;;
+                background-color:  $pinkPrimary;
                 border-radius: 50px;
                 color: $whiteTextPrimary;
                 font-family: $fredokaFamily;
@@ -600,7 +600,7 @@ main {
                 text-decoration: none;
                 display: inline-block;
                 padding: 20px 45px;
-                background-color:  #dd3333;;
+                background-color:  $pinkPrimary;;
                 border-radius: 50px;
                 color: $whiteTextPrimary;
                 font-family: $fredokaFamily;
@@ -679,12 +679,9 @@ main {
     .partners {
         width: 100%;
         height: 580px;
-        // background-color: rgba(211, 211, 211, 0.276);
-        // background-image: url('../../img/background-wave3.png');
-        // background-size:auto;
-        // background-repeat: no-repeat;
-        // background-position: center bottom;
-
+        background-image: url('../../img/curva-grigia-580px.png');
+        background-size: cover;
+        background-repeat: no-repeat;
         h1 {
             padding: 50px 0;
             text-align: center;

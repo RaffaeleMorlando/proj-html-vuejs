@@ -90,12 +90,7 @@ const app = new Vue(
         'img/partner-1.png',
         'img/partner-7.png'
       ],
-      footerLinkSectionOne: ['Request a website',
-      'Browse Themes', 
-      'Payment options', 
-      'Support System', 
-      'Checkout', 
-      'Purchase Theme'],
+      footerLinkSectionOne: ['Request a website','Browse Themes','Payment options','Support System','Checkout','Purchase Theme'],
       footerLinkSectionTwo: [
         'Purchase Theme',
         'Our Benefits',
@@ -103,6 +98,15 @@ const app = new Vue(
         'Our Services',
         'Other Products',
         'My account'
+      ],
+      categories: [
+        'economy',
+        'desgin',
+        'coaching',
+        'business',
+        'medicine',
+        'law',
+        'fitness',
       ]
     }
   }

@@ -4,17 +4,64 @@ footer {
     background-color: $pinkPrimary;
 
     .footer-container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
         width: 80%;
-        height: 100%;
-        margin: auto;
+        height: 370px;
         display: flex;
+        justify-content: center;
+        margin: auto;
 
-        .sub-footer {
+        .footer-left {
+            display: inline-block;
             width: 33.333%;
-            height: 100%;
-            border: 1px solid red;
+            // border: 1px solid blue;
+            .footer-left-container-img {
+                width: 100%;
+                // height: 50px;
+                height: 33.333%;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 60%;
+                    margin-bottom: 20px;
+                }
+            }
+            p {
+                height: 33.333%;
+                line-height: 30px;
+                font-size: 14px;
+                font-family: $sourceSansProFamily;
+                color: $whiteTextPrimary;
+                padding-right: 20px;
+            }
+            .social-logo {
+                width: 100%;
+                height: 33.333%;
+                display: flex;
+                a {
+                    text-decoration: none;
+                    i {
+                        width: 50px;
+                        height: 50px;
+                        border: 2px solid $yellowBrand;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 10px;
+                        color: $whiteTextPrimary;
+                    }
+                }
+                
+            }
+        }
+        .footer-center {
             display: flex;
             align-items: center;
+            justify-content: center;
+            width: 33.333%;
             .link-section  {
                 width: 50%;
                 h4 {
@@ -27,27 +74,89 @@ footer {
                     list-style: none;
                     li {
                         margin-bottom: 20px;
-                        font-family: $sourceSansProFamily;
-                        font-weight: 200;
-                        color: $whiteTextPrimary;
+                        a {
+                            text-decoration: none;
+                            font-family: $sourceSansProFamily;
+                            font-weight: 200;
+                            color: $whiteTextPrimary;
+                        }
                     }
                 }
-            }     
-            .footer-left-container-img {
+            } 
+        }
+        .footer-right {
+            width: 33.333%;
+            &-input-container {
+                position: relative;
                 width: 100%;
-                height: 50px;
-                img {
-                    width: 60%;
-                    margin-bottom: 20px;
-                }
-                p {
-                    line-height: 30px;
-                    font-size: 14px;
+                padding: 20px 10px;
+                input {
+                    display: block;
+                    width: 90%;
+                    height: 70px;
+                    border-radius: 50px;
+                    border: none;
+                    margin: auto;
+                    padding: 20px 20px;
+                    outline: none;
                     font-family: $sourceSansProFamily;
-                    color: $whiteTextPrimary;
                 }
-
-            }  
-        }   
+                button {
+                    position: absolute;
+                    top: 20px;
+                    right: 25px;
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 50px;
+                    border: none;
+                    background-color: $yellowBrand;
+                    font-size: 20px;
+                    color: $whiteTextPrimary;
+                    outline: none;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+                    @include transitionFast;
+                    i {
+                        font-size: 20px;
+                    }
+                    &:hover {
+                        background-color: $pinkPrimary;
+                        cursor: pointer;
+                    }
+                }
+            }
+            h4 {
+                font-size: 14px;
+                font-family: $fredokaFamily;
+                color: $whiteTextPrimary;
+                text-align: end;
+                padding: 20px 40px;
+            }
+            .categories-container {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                .cat {
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    border: 1px solid $whiteTextPrimary;
+                    border-radius: 50px;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                    padding: 6px 15px;
+                    color: $whiteTextPrimary;
+                    font-family: $sourceSansProFamily;
+                     a  {
+                         text-decoration: none;
+                         color: $whiteTextPrimary;
+                     }
+                    &:hover {
+                        background-color: $yellowBrand;
+                        border: none;
+                        @include transitionFast;
+                    }
+                }
+            }
+        }        
     }
 }
