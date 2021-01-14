@@ -34,7 +34,6 @@
                                         <i  v-if="item.dropdown === true" class="fas fa-caret-down"></i>
                                         <div v-show="item.dropdown === true && index == currentItem" 
                                         class="animate__animated animate__fadeInUp dropdown-container"
-                                        :class="[dropdownOpen === true? animate__animated animate__fadeInUp dropdown-container : animate__animated animate__fadeOutDown dropdown-container]"
                                         >
                                             <ul>
                                                 <li v-for="item in dropdownList">{{item}}</li>
