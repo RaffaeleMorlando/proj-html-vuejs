@@ -1,5 +1,5 @@
 .variables-fees {
-    width: 80%;
+    width: $widthContainerContent;
     height: 500px;
     margin: auto;
     display: flex;
@@ -40,7 +40,7 @@
         a {
             text-decoration: none;
             display: inline-block;
-            padding: 20px 45px;
+            padding: $paddingRegular;
             background-color:  $pinkPrimary;;
             border-radius: 50px;
             color: $whiteTextPrimary;

@@ -30,7 +30,7 @@ const app = new Vue(
         {
           'section': 'Purchase',
           'dropdown': false
-        },
+        }
       ],
       faculties: [
         {
@@ -155,9 +155,6 @@ const app = new Vue(
       showDropdown: function(index) {
         this.currentItem = index;
       },
-      showArrows: function() {
-        console.log(this.showArrow);
-      }
     }
   }
 );

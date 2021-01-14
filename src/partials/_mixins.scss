@@ -1,6 +1,14 @@
 @mixin  transitionEase {
     transition: .5s ease-in-out;
 }
+
 @mixin  transitionFast {
     transition: .2s ease;
+}
+
+@mixin flexCenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
 }

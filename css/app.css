@@ -127,6 +127,7 @@ header .header-navbar__link-section .navbar-button {
 header .header-navbar__link-section .navbar-button a {
   text-decoration: none;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 220px;
@@ -178,6 +179,7 @@ header .hero .arrow-left, header .hero .arrow-right {
   width: 25%;
   height: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   color: #fff;
@@ -214,6 +216,7 @@ header .hero .center p {
 }
 header .hero .center .buttons {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -578,6 +581,7 @@ main {
 }
 .upcoming-events .container-boxes-events .box-event #button-box {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -633,7 +637,7 @@ main {
 }
 .upcoming-events .button-more-events a {
   text-decoration: none;
-  padding: 25px 45px;
+  padding: 20px 45px;
   background-color: #EAD758;
   color: #fff;
   font-family: "Fredoka One", cursive;
@@ -686,8 +690,8 @@ main {
   margin-right: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .latest-courses .courses-container .course-info-container .course-info #button-view-more {
   text-align: center;
@@ -874,6 +878,7 @@ main {
   width: 60%;
   height: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: 32px;
@@ -1019,6 +1024,7 @@ footer .footer-container .footer-left .social-logo a i {
   border: 2px solid #EAD758;
   border-radius: 50%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
@@ -1026,6 +1032,7 @@ footer .footer-container .footer-left .social-logo a i {
 }
 footer .footer-container .footer-center {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 33.333%;

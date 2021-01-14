@@ -1,7 +1,7 @@
 $backgroundOverlayColor: rgba(218, 95, 96, 0.902);
 $fredokaFamily: 'Fredoka One', cursive;
 $sourceSansProFamily: 'Source Sans Pro', sans-serif;
-$widthContainerContent: 60%;
+$widthContainerContent: 80%;
 
 //Font size
 $fontSizeH1: 45px;
@@ -12,3 +12,11 @@ $whiteTextPrimary: #fff;
 $yellowBrand: #EAD758;
 $pinkPrimary: #E56768;
 $colorH1: #3D414F;
+
+
+//flex direction
+$row: row;
+$column: column;
+
+//padding buttons
+$paddingRegular: 20px 45px;

@@ -9,7 +9,7 @@
     margin-top: 20px;
     margin-bottom: 100px;
     &__container {
-        width: 80%;
+        width: $widthContainerContent;
         height: 100%;
         margin: auto;
         display: flex;
@@ -42,7 +42,7 @@
             a {
                 text-decoration: none;
                 display: inline-block;
-                padding: 20px 45px;
+                padding: $paddingRegular;
                 background-color: $yellowBrand;
                 border-radius: 50px;
                 color: $whiteTextPrimary;
