@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>EduPrime</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
@@ -31,7 +32,10 @@
                                     v-for="(item,index) in itemNavbarHeader">
                                         <a href="#">{{item.section}}</a>
                                         <i  v-if="item.dropdown === true" class="fas fa-caret-down"></i>
-                                        <div v-show="item.dropdown === true && index == currentItem" class="dropdown-container">
+                                        <div v-show="item.dropdown === true && index == currentItem" 
+                                        class="animate__animated animate__fadeInUp dropdown-container"
+                                        :class="[dropdownOpen === true? animate__animated animate__fadeInUp dropdown-container : animate__animated animate__fadeOutDown dropdown-container]"
+                                        >
                                             <ul>
                                                 <li v-for="item in dropdownList">{{item}}</li>
                                             </ul>

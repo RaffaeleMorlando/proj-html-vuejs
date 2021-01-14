@@ -134,6 +134,7 @@ const app = new Vue(
         'Item'
       ],
       dropdown: false,
+      dropdownOpen: false,
       currentItem: null,
       showArrow: false
     },
@@ -154,6 +155,7 @@ const app = new Vue(
       },
       showDropdown: function(index) {
         this.currentItem = index;
+        this.dropdownOpen = true;
       },
     }
   }
