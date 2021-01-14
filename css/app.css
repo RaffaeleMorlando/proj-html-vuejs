@@ -149,9 +149,13 @@ header .hero .arrow-left, header .hero .arrow-right {
   justify-content: center;
   color: #fff;
   font-size: 40px;
-}
-header .hero .arrow-left:hover, header .hero .arrow-right:hover {
   cursor: pointer;
+}
+header .hero .arrow-left .fade-enter-active, header .hero .arrow-left .fade-leave-active, header .hero .arrow-right .fade-enter-active, header .hero .arrow-right .fade-leave-active {
+  transition: opacity 0.5s;
+}
+header .hero .arrow-left .fade-enter, header .hero .arrow-left .fade-leave-to, header .hero .arrow-right .fade-enter, header .hero .arrow-right .fade-leave-to {
+  opacity: 0;
 }
 header .hero .center {
   display: flex;

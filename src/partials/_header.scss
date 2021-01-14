@@ -144,8 +144,12 @@ header {
             justify-content: center;
             color: $whiteTextPrimary;
             font-size: 40px;
-            &:hover {
-                cursor: pointer;
+            cursor: pointer;
+            .fade-enter-active, .fade-leave-active {
+                transition: opacity .5s;
+            }
+            .fade-enter, .fade-leave-to {
+                opacity: 0;
             }
         }
         .center {

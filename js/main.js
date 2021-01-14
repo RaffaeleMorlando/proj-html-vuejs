@@ -125,10 +125,8 @@ const app = new Vue(
           'title': 'Lead.Inspire.Win!',
           'para': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perferendis, dolorum quas odio expedita doloremque?'
         }
-        // 'img/theme_slider1_bg-1.jpg',
-        // 'img/theme_slider2_bg-1.jpg',
-        // 'img/theme_slider3_bg-1.jpg'
-      ]
+      ],
+      showArrow: false
     },
     methods: {
       slideLeft: function() {
@@ -144,6 +142,12 @@ const app = new Vue(
         } else {
           this.currentIndex++;
         }
+      },
+      showDropdown: function() {
+        console.log('dropdown');
+      },
+      showArrows: function() {
+        console.log(this.showArrow);
       }
     }
   }
