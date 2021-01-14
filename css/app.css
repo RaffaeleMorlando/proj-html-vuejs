@@ -76,6 +76,14 @@ header .header-navbar__link-section .links ul li:hover {
 header .header-navbar__link-section .links ul li:hover a {
   color: #EAD758;
 }
+header .header-navbar__link-section .links ul li:first-child {
+  color: #EAD758;
+}
+header .header-navbar__link-section .links ul li:first-child a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #EAD758;
+}
 header .header-navbar__link-section .navbar-button {
   width: 20%;
   height: 100%;
@@ -136,6 +144,14 @@ header .hero__left-bar:hover {
 header .hero .arrow-left, header .hero .arrow-right {
   width: 25%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 40px;
+}
+header .hero .arrow-left:hover, header .hero .arrow-right:hover {
+  cursor: pointer;
 }
 header .hero .center {
   display: flex;
@@ -157,6 +173,7 @@ header .hero .center p {
   font-family: "Source Sans Pro", sans-serif;
   color: #fff;
   line-height: 30px;
+  font-size: 22px;
 }
 header .hero .center .buttons {
   display: flex;
@@ -234,7 +251,7 @@ main .browser-courses__container__text .brw-course-cont-img {
   height: 80px;
 }
 main .browser-courses__container__text .brw-course-cont-img img {
-  width: 10%;
+  width: 60px;
 }
 main .browser-courses__container__text h1 {
   font-size: 45px;
@@ -988,6 +1005,9 @@ footer .footer-container .footer-center .link-section ul li a {
   font-weight: 200;
   color: #fff;
 }
+footer .footer-container .footer-center .link-section ul li a:hover {
+  color: #EAD758;
+}
 footer .footer-container .footer-right {
   width: 33.333%;
 }
@@ -1041,6 +1061,7 @@ footer .footer-container .footer-right .categories-container {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  padding-right: 40px;
 }
 footer .footer-container .footer-right .categories-container .cat {
   font-size: 12px;

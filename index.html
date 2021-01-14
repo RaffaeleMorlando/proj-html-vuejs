@@ -13,24 +13,18 @@
 <body>
     <div id="app">
         <header>
-            <div class="background-theme">
+            <div class="background-theme" :style="{'background-image': 'url(' + backgroundsHeader[currentIndex].background + ')'}">
                 <div class="background-overlay">
 
                     <div class="header-navbar">
+
                         <div class="header-navbar__logo-container">
                             <img src="img/theme_eduprime_logo.png" alt="">
                         </div>
+
                         <div class="header-navbar__link-section">
                             <div class="links">
                                 <ul>
-                                    <!-- <li><a href="#">Home</a><i class="fas fa-caret-down"></i></li>
-                                    <li><a href="#">Courses</a><i class="fas fa-caret-down"></i></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">News</a><i class="fas fa-caret-down"></i></li>
-                                    <li><a href="#">Pages</a><i class="fas fa-caret-down"></i></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Purchase</a></li> -->
-                                    <!-- <li v-for="item in linkNavbar"><a href="#">{{item}}</a></li> -->
                                     <li v-for="item in itemNavbarHeader">
                                         <a href="#">{{item.section}}</a>
                                         <i  v-if="item.dropdown === true" class="fas fa-caret-down"></i>
@@ -49,18 +43,23 @@
                             <i class="fas fa-book-open"></i>
                             <i class="far fa-life-ring"></i>
                         </div>
-                        <div class="arrow-left"></div>
+                        <div class="arrow-left">
+                            <i @click="slideLeft" class="fas fa-chevron-left"></i>
+                        </div>
                         <div class="center">
-                            <h1><span>Key to your success</span></h1>
+                            <!-- <h1><span>Key to your success</span></h1> -->
+                            <h1><span>{{backgroundsHeader[currentIndex].title}}</span></h1>
                             <p>
-                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sint excepturi, laborum numquam deserunt libero nobis nisi ipsum iure harum vel porro, cumque illum officia ex. Excepturi laborum harum quod esse. Deleniti ullam fugiat voluptatem hic adipisci nulla similique commodi?</span>
+                                <span>{{backgroundsHeader[currentIndex].para}}</span>
                             </p>
                             <div class="buttons">
                                 <a href="#"><i class="fas fa-search"></i>Search courses</a>
                                 <a href="#"><i class="fas fa-user-plus"></i>Apply for university</a>
                             </div>
                         </div>
-                        <div class="arrow-right"></div>
+                        <div class="arrow-right">
+                            <i @click="slideRight" class="fas fa-chevron-right"></i>
+                        </div>
                     </div>
 
                     <div class="container-clouds">
@@ -251,7 +250,7 @@
                         <span>Subscribe Now to Our Newsletter !</span>
                     </div>
                     <div class="newsletter-input-container">
-                        <input type="text" name="" id="" placeholder="Email address...">
+                        <input type="text" placeholder="Email address...">
                         <button type="submit">
                             <i class="fas fa-paper-plane"></i>
                         </button>
@@ -303,7 +302,7 @@
 
                 <div class="footer-right">
                     <div class="footer-right-input-container">
-                        <input type="text" name="" id="" placeholder="Email address...">
+                        <input type="text" placeholder="Email address...">
                         <button type="submit">
                             <i class="fas fa-paper-plane"></i>
                         </button>

@@ -25,11 +25,11 @@ const app = new Vue(
         },
         {
           'section': 'Contact',
-          'dropdown': true
+          'dropdown': false
         },
         {
           'section': 'Purchase',
-          'dropdown': true
+          'dropdown': false
         },
       ],
       faculties: [
@@ -107,7 +107,44 @@ const app = new Vue(
         'medicine',
         'law',
         'fitness',
+      ],
+      currentIndex: 0,
+      backgroundsHeader: [
+        {
+          'background':'img/theme_slider1_bg-1.jpg',
+          'title': 'Showcase your courses',
+          'para': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perferendis, dolorum quas odio expedita doloremque?'
+        },
+        {
+          'background':'img/theme_slider2_bg-1.jpg',
+          'title': 'Key to your success',
+          'para': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perferendis, dolorum quas odio expedita doloremque?'
+        },
+        {
+          'background': 'img/theme_slider3_bg-1.jpg',
+          'title': 'Lead.Inspire.Win!',
+          'para': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perferendis, dolorum quas odio expedita doloremque?'
+        }
+        // 'img/theme_slider1_bg-1.jpg',
+        // 'img/theme_slider2_bg-1.jpg',
+        // 'img/theme_slider3_bg-1.jpg'
       ]
+    },
+    methods: {
+      slideLeft: function() {
+        if(this.currentIndex <= 0) {
+          this.currentIndex = this.backgroundsHeader.length - 1;
+        } else {
+          this.currentIndex--;
+        }
+      },
+      slideRight: function() {
+        if(this.currentIndex >= this.backgroundsHeader.length - 1) {
+          this.currentIndex = 0;
+        } else {
+          this.currentIndex++;
+        }
+      }
     }
   }
 );

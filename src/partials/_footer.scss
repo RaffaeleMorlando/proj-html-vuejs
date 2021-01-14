@@ -79,6 +79,10 @@ footer {
                             font-family: $sourceSansProFamily;
                             font-weight: 200;
                             color: $whiteTextPrimary;
+
+                            &:hover {
+                                color: $yellowBrand;
+                            }
                         }
                     }
                 }
@@ -136,6 +140,7 @@ footer {
                 display: flex;
                 justify-content: flex-end;
                 flex-wrap: wrap;
+                padding-right: 40px;
                 .cat {
                     font-size: 12px;
                     text-transform: uppercase;
