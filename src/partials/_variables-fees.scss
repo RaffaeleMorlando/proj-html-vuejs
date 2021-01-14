@@ -1,0 +1,56 @@
+.variables-fees {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    padding-top: 50px;
+    margin-bottom: 80px;
+    .variables-fees-img {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img {
+            max-width: 500px;
+        }
+    }
+    .variables-fees-text {
+        width: 50%;
+        height: 100%;
+        .examination-method-text-icon {
+            width: 100%;
+            img {
+                width: 60px;
+                margin-bottom: 20px;
+            }
+        }
+        h1 {
+            font-size: $fontSizeH1;
+            color: $colorH1;
+            font-family: $fredokaFamily;
+            margin-bottom: 30px;
+        }
+        p {
+            width: 80%;
+            line-height: 30px;
+            font-family: $sourceSansProFamily;
+            margin-bottom: 30px;
+            color: #3D414F;
+        }
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 20px 45px;
+            background-color:  $pinkPrimary;;
+            border-radius: 50px;
+            color: $whiteTextPrimary;
+            font-family: $fredokaFamily;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            @include transitionFast;
+            &:hover {
+                background-color: $yellowBrand;
+            }
+        }
+    }
+}

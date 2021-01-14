@@ -1,0 +1,83 @@
+.university-year {
+    width: 100%;
+    background-color: $pinkPrimary;
+    #university-year__container {
+        .university-year_icon {
+            width: 10%;
+            margin: auto;
+            text-align: center;
+            img {
+                width: 70px;
+                margin-top: 80px;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: $fontSizeH1;
+            color: $whiteTextPrimary;
+            font-family: $fredokaFamily;
+            margin: 20px 0;
+        }
+
+        .time-line-top {
+            width: 1200px;
+            margin: auto;
+            height: 200px;
+            display: flex;
+            justify-content: flex-end;
+            .time-line-top-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 39%;
+                text-align: center;
+                h6 {
+                    font-size: $fontSizeH6;
+                    font-family: $fredokaFamily;
+                    color: $whiteTextPrimary;
+                    margin-bottom: 20px;
+                }
+                p {
+                    width: 90%;
+                    font-family: $sourceSansProFamily;
+                    color: rgba(255, 255, 255, 0.8);
+                    line-height: 25px;
+                }
+            }
+        }
+        .timeline-container {
+            width: 100%;
+            text-align: center;
+            img {
+                margin: 0 50px;
+            }
+        }
+        .time-line-bottom {
+            width: 1200px;
+            margin: auto;
+            height: 200px;
+            display: flex;
+            justify-content: flex-start;
+            .time-line-bottom-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 38%;
+                text-align: center;
+                h6 {
+                    font-size: $fontSizeH6;
+                    font-family: $fredokaFamily;
+                    color: $whiteTextPrimary;
+                    margin-bottom: 20px;
+                }
+                p {
+                    width: 90%;
+                    font-family: $sourceSansProFamily;
+                    color: rgba(255, 255, 255, 0.8);
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}

@@ -126,6 +126,15 @@ const app = new Vue(
           'para': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perferendis, dolorum quas odio expedita doloremque?'
         }
       ],
+      dropdownList: [
+        'Item',
+        'Item',
+        'Item',
+        'Item',
+        'Item'
+      ],
+      dropdown: false,
+      currentItem: null,
       showArrow: false
     },
     methods: {
@@ -143,8 +152,8 @@ const app = new Vue(
           this.currentIndex++;
         }
       },
-      showDropdown: function() {
-        console.log('dropdown');
+      showDropdown: function(index) {
+        this.currentItem = index;
       },
       showArrows: function() {
         console.log(this.showArrow);

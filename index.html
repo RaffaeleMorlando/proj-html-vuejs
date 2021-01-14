@@ -25,9 +25,17 @@
                         <div class="header-navbar__link-section">
                             <div class="links">
                                 <ul>
-                                    <li @click="showDropdown" v-for="item in itemNavbarHeader">
+                                    <li 
+                                    @mouseenter="showDropdown(index)"
+                                    @mouseleave="currentItem = null"
+                                    v-for="(item,index) in itemNavbarHeader">
                                         <a href="#">{{item.section}}</a>
                                         <i  v-if="item.dropdown === true" class="fas fa-caret-down"></i>
+                                        <div v-show="item.dropdown === true && index == currentItem" class="dropdown-container">
+                                            <ul>
+                                                <li v-for="item in dropdownList">{{item}}</li>
+                                            </ul>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>

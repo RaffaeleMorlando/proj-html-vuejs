@@ -1,0 +1,129 @@
+.faculties {
+    width: 100%;
+    h1 {
+        text-align: center;
+        color: $colorH1;
+        font-size: $fontSizeH1;
+        font-family: $fredokaFamily;
+    }
+    p {
+        width: 22%;
+        color: $colorH1;
+        margin: 30px auto;
+        text-align: center;
+        font-size: 16px;
+        font-family: $sourceSansProFamily;
+        line-height: 30px;
+        word-break: break-all;
+    }
+    &__container-box{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+        margin-bottom: 80px;
+        .faculty {
+            position: relative;
+            width: 235px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(230, 228, 228);
+
+            a {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                img {
+                    width: 40%;
+                    margin-bottom: 20px;
+                }
+                span {
+                    font-family: $fredokaFamily;
+                    color: $pinkPrimary;
+                    font-size: 16px;
+                }
+            }
+        }
+        .faculty:first-child {
+            position: relative;
+            background-color: $pinkPrimary;
+            img {
+                filter: brightness(0) invert(1);
+            }
+            span {
+                color: $whiteTextPrimary;
+            }
+            .arrow-down-select {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -10px;
+                width: 20px;
+                height: 20px;
+                background-color: #E56768;
+                transform: rotate(45deg);
+            }
+        }
+        
+    }
+    .faculty-info-container {
+        width: $widthContainerContent;
+        height: 350px;
+        margin: auto;
+        display: flex;
+        &__img {
+            width: 50%;
+            height: 100%;
+        }
+        #faculty-info-container-text{
+            width: 50%;
+            height: 100%;
+            h2 {
+                font-size: 38px;
+                font-family: $fredokaFamily;
+                color: $colorH1;
+            }
+            span {
+                display: inline-block;
+                margin-top: 30px;
+                margin-bottom: 50px;
+                color: #8b8b8a;
+                line-height: 30px;
+            }
+            a {
+                text-decoration: none;
+                font-family: $fredokaFamily;
+                background-color: $pinkPrimary;
+                color: $whiteTextPrimary;
+                border-radius: 50px;
+                padding: 20px 45px;
+                @include transitionFast;
+                &:hover {
+                    background-color: $yellowBrand;
+                    columns: $whiteTextPrimary;
+                }
+            }
+        }
+    }
+    .bottom-wave {
+        width: 100%;
+        overflow: hidden;
+        background: linear-gradient(0deg, rgba(229,103,104,1) 4%, rgba(255,255,255,1) 6%);
+        svg {
+            width: 2216pt;
+            height: 140pt;
+            transform: rotate(180deg);
+            g {
+                transform: translate(0, 140) scale(0.1, -0.1);
+            }
+        }
+    }
+}

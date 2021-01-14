@@ -55,6 +55,7 @@ header .header-navbar__link-section .links ul {
   height: 100%;
 }
 header .header-navbar__link-section .links ul li {
+  position: relative;
   display: flex;
   align-items: center;
   height: 100%;
@@ -83,6 +84,38 @@ header .header-navbar__link-section .links ul li:first-child a {
   text-decoration: none;
   font-size: 17px;
   color: #EAD758;
+}
+header .header-navbar__link-section .links ul .dropdown-container {
+  position: absolute;
+  bottom: -160px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(67, 73, 89, 0.1);
+}
+header .header-navbar__link-section .links ul .dropdown-container ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px;
+}
+header .header-navbar__link-section .links ul .dropdown-container ul li {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: #5C5E6C;
+  padding: 5px 10px;
+  transition: 0.2s ease;
+}
+header .header-navbar__link-section .links ul .dropdown-container ul li:hover {
+  color: #E56768;
+  cursor: pointer;
 }
 header .header-navbar__link-section .navbar-button {
   width: 20%;
@@ -229,7 +262,8 @@ header .container-clouds {
 main {
   width: 100%;
 }
-main .browser-courses {
+
+.browser-courses {
   width: 100%;
   height: 500px;
   background-image: url(/images/home-background.png?f34f2cb3581cb432451838c2a18145d2);
@@ -239,31 +273,31 @@ main .browser-courses {
   margin-top: 20px;
   margin-bottom: 100px;
 }
-main .browser-courses__container {
+.browser-courses__container {
   width: 80%;
   height: 100%;
   margin: auto;
   display: flex;
   align-items: center;
 }
-main .browser-courses__container__text {
+.browser-courses__container__text {
   width: 50%;
   height: 90%;
 }
-main .browser-courses__container__text .brw-course-cont-img {
+.browser-courses__container__text .brw-course-cont-img {
   width: 100%;
   height: 80px;
 }
-main .browser-courses__container__text .brw-course-cont-img img {
+.browser-courses__container__text .brw-course-cont-img img {
   width: 60px;
 }
-main .browser-courses__container__text h1 {
+.browser-courses__container__text h1 {
   font-size: 45px;
   font-family: "Fredoka One", cursive;
   color: #3D414F;
   margin-bottom: 20px;
 }
-main .browser-courses__container__text p {
+.browser-courses__container__text p {
   font-family: "Source Sans Pro", sans-serif;
   color: #3D414F;
   margin-top: 20px;
@@ -271,7 +305,7 @@ main .browser-courses__container__text p {
   line-height: 30px;
   padding-right: 10px;
 }
-main .browser-courses__container__text a {
+.browser-courses__container__text a {
   text-decoration: none;
   display: inline-block;
   padding: 20px 45px;
@@ -282,28 +316,29 @@ main .browser-courses__container__text a {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-main .browser-courses__container__text a:hover {
+.browser-courses__container__text a:hover {
   background-color: #dd3333;
 }
-main .browser-courses__container .browser-courses__container_img {
+.browser-courses__container .browser-courses__container_img {
   width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-main .browser-courses__container .browser-courses__container_img img {
+.browser-courses__container .browser-courses__container_img img {
   max-width: 500px;
 }
-main .faculties {
+
+.faculties {
   width: 100%;
 }
-main .faculties h1 {
+.faculties h1 {
   text-align: center;
   color: #3D414F;
   font-size: 45px;
   font-family: "Fredoka One", cursive;
 }
-main .faculties p {
+.faculties p {
   width: 22%;
   color: #3D414F;
   margin: 30px auto;
@@ -313,7 +348,7 @@ main .faculties p {
   line-height: 30px;
   word-break: break-all;
 }
-main .faculties__container-box {
+.faculties__container-box {
   position: relative;
   width: 100%;
   height: 200px;
@@ -322,7 +357,7 @@ main .faculties__container-box {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
   margin-bottom: 80px;
 }
-main .faculties__container-box .faculty {
+.faculties__container-box .faculty {
   position: relative;
   width: 235px;
   height: 100%;
@@ -332,7 +367,7 @@ main .faculties__container-box .faculty {
   justify-content: center;
   border: 1px solid #e6e4e4;
 }
-main .faculties__container-box .faculty a {
+.faculties__container-box .faculty a {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -340,26 +375,26 @@ main .faculties__container-box .faculty a {
   justify-content: center;
   text-decoration: none;
 }
-main .faculties__container-box .faculty a img {
+.faculties__container-box .faculty a img {
   width: 40%;
   margin-bottom: 20px;
 }
-main .faculties__container-box .faculty a span {
+.faculties__container-box .faculty a span {
   font-family: "Fredoka One", cursive;
   color: #E56768;
   font-size: 16px;
 }
-main .faculties__container-box .faculty:first-child {
+.faculties__container-box .faculty:first-child {
   position: relative;
   background-color: #E56768;
 }
-main .faculties__container-box .faculty:first-child img {
+.faculties__container-box .faculty:first-child img {
   filter: brightness(0) invert(1);
 }
-main .faculties__container-box .faculty:first-child span {
+.faculties__container-box .faculty:first-child span {
   color: #fff;
 }
-main .faculties__container-box .faculty:first-child .arrow-down-select {
+.faculties__container-box .faculty:first-child .arrow-down-select {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -369,33 +404,33 @@ main .faculties__container-box .faculty:first-child .arrow-down-select {
   background-color: #E56768;
   transform: rotate(45deg);
 }
-main .faculties .faculty-info-container {
+.faculties .faculty-info-container {
   width: 60%;
   height: 350px;
   margin: auto;
   display: flex;
 }
-main .faculties .faculty-info-container__img {
+.faculties .faculty-info-container__img {
   width: 50%;
   height: 100%;
 }
-main .faculties .faculty-info-container #faculty-info-container-text {
+.faculties .faculty-info-container #faculty-info-container-text {
   width: 50%;
   height: 100%;
 }
-main .faculties .faculty-info-container #faculty-info-container-text h2 {
+.faculties .faculty-info-container #faculty-info-container-text h2 {
   font-size: 38px;
   font-family: "Fredoka One", cursive;
   color: #3D414F;
 }
-main .faculties .faculty-info-container #faculty-info-container-text span {
+.faculties .faculty-info-container #faculty-info-container-text span {
   display: inline-block;
   margin-top: 30px;
   margin-bottom: 50px;
   color: #8b8b8a;
   line-height: 30px;
 }
-main .faculties .faculty-info-container #faculty-info-container-text a {
+.faculties .faculty-info-container #faculty-info-container-text a {
   text-decoration: none;
   font-family: "Fredoka One", cursive;
   background-color: #E56768;
@@ -404,131 +439,133 @@ main .faculties .faculty-info-container #faculty-info-container-text a {
   padding: 20px 45px;
   transition: 0.2s ease;
 }
-main .faculties .faculty-info-container #faculty-info-container-text a:hover {
+.faculties .faculty-info-container #faculty-info-container-text a:hover {
   background-color: #EAD758;
   -moz-columns: #fff;
        columns: #fff;
 }
-main .faculties .bottom-wave {
+.faculties .bottom-wave {
   width: 100%;
   overflow: hidden;
   background: linear-gradient(0deg, #e56768 4%, white 6%);
 }
-main .faculties .bottom-wave svg {
+.faculties .bottom-wave svg {
   width: 2216pt;
   height: 140pt;
   transform: rotate(180deg);
 }
-main .faculties .bottom-wave svg g {
+.faculties .bottom-wave svg g {
   transform: translate(0, 140) scale(0.1, -0.1);
 }
-main .university-year {
+
+.university-year {
   width: 100%;
   background-color: #E56768;
 }
-main .university-year #university-year__container .university-year_icon {
+.university-year #university-year__container .university-year_icon {
   width: 10%;
   margin: auto;
   text-align: center;
 }
-main .university-year #university-year__container .university-year_icon img {
+.university-year #university-year__container .university-year_icon img {
   width: 70px;
   margin-top: 80px;
 }
-main .university-year #university-year__container h1 {
+.university-year #university-year__container h1 {
   text-align: center;
   font-size: 45px;
   color: #fff;
   font-family: "Fredoka One", cursive;
   margin: 20px 0;
 }
-main .university-year #university-year__container .time-line-top {
+.university-year #university-year__container .time-line-top {
   width: 1200px;
   margin: auto;
   height: 200px;
   display: flex;
   justify-content: flex-end;
 }
-main .university-year #university-year__container .time-line-top .time-line-top-content {
+.university-year #university-year__container .time-line-top .time-line-top-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 39%;
   text-align: center;
 }
-main .university-year #university-year__container .time-line-top .time-line-top-content h6 {
+.university-year #university-year__container .time-line-top .time-line-top-content h6 {
   font-size: 18px;
   font-family: "Fredoka One", cursive;
   color: #fff;
   margin-bottom: 20px;
 }
-main .university-year #university-year__container .time-line-top .time-line-top-content p {
+.university-year #university-year__container .time-line-top .time-line-top-content p {
   width: 90%;
   font-family: "Source Sans Pro", sans-serif;
   color: rgba(255, 255, 255, 0.8);
   line-height: 25px;
 }
-main .university-year #university-year__container .timeline-container {
+.university-year #university-year__container .timeline-container {
   width: 100%;
   text-align: center;
 }
-main .university-year #university-year__container .timeline-container img {
+.university-year #university-year__container .timeline-container img {
   margin: 0 50px;
 }
-main .university-year #university-year__container .time-line-bottom {
+.university-year #university-year__container .time-line-bottom {
   width: 1200px;
   margin: auto;
   height: 200px;
   display: flex;
   justify-content: flex-start;
 }
-main .university-year #university-year__container .time-line-bottom .time-line-bottom-content {
+.university-year #university-year__container .time-line-bottom .time-line-bottom-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 38%;
   text-align: center;
 }
-main .university-year #university-year__container .time-line-bottom .time-line-bottom-content h6 {
+.university-year #university-year__container .time-line-bottom .time-line-bottom-content h6 {
   font-size: 18px;
   font-family: "Fredoka One", cursive;
   color: #fff;
   margin-bottom: 20px;
 }
-main .university-year #university-year__container .time-line-bottom .time-line-bottom-content p {
+.university-year #university-year__container .time-line-bottom .time-line-bottom-content p {
   width: 90%;
   font-family: "Source Sans Pro", sans-serif;
   color: rgba(255, 255, 255, 0.8);
   line-height: 25px;
 }
-main .upcoming-events {
+
+.upcoming-events {
   width: 100%;
   height: 700px;
   background-color: #E56768;
   padding-top: 80px;
 }
-main .upcoming-events-icon {
+.upcoming-events-icon {
   width: 50%;
   height: 100px;
   margin: auto;
   text-align: center;
 }
-main .upcoming-events-icon img {
+.upcoming-events-icon img {
   width: 70px;
 }
-main .upcoming-events h1 {
+.upcoming-events h1 {
   text-align: center;
   font-size: 45px;
   color: #fff;
   font-family: "Fredoka One", cursive;
   margin-bottom: 50px;
 }
-main .upcoming-events .container-boxes-events {
+.upcoming-events .container-boxes-events {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-main .upcoming-events .container-boxes-events .box-event {
+.upcoming-events .container-boxes-events .box-event {
   position: relative;
   width: 360px;
   height: 210px;
@@ -539,7 +576,7 @@ main .upcoming-events .container-boxes-events .box-event {
   text-align: center;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
 }
-main .upcoming-events .container-boxes-events .box-event #button-box {
+.upcoming-events .container-boxes-events .box-event #button-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -557,14 +594,14 @@ main .upcoming-events .container-boxes-events .box-event #button-box {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
   transition: 0.2s ease;
 }
-main .upcoming-events .container-boxes-events .box-event #button-box:hover {
+.upcoming-events .container-boxes-events .box-event #button-box:hover {
   background-color: #EAD758;
   color: #fff;
 }
-main .upcoming-events .container-boxes-events .box-event #button-box i {
+.upcoming-events .container-boxes-events .box-event #button-box i {
   margin-right: 5px;
 }
-main .upcoming-events .container-boxes-events .box-event a {
+.upcoming-events .container-boxes-events .box-event a {
   display: block;
   text-decoration: none;
   color: #3D414F;
@@ -572,16 +609,16 @@ main .upcoming-events .container-boxes-events .box-event a {
   font-family: "Fredoka One", cursive;
   margin-bottom: 20px;
 }
-main .upcoming-events .container-boxes-events .box-event span {
+.upcoming-events .container-boxes-events .box-event span {
   display: inline-block;
   margin-bottom: 20px;
   font-family: "Source Sans Pro", sans-serif;
   color: #70727E;
 }
-main .upcoming-events .container-boxes-events .box-event span i {
+.upcoming-events .container-boxes-events .box-event span i {
   margin-right: 5px;
 }
-main .upcoming-events .container-boxes-events .box-event p {
+.upcoming-events .container-boxes-events .box-event p {
   height: 50px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -589,12 +626,12 @@ main .upcoming-events .container-boxes-events .box-event p {
   font-family: "Source Sans Pro", sans-serif;
   color: #70727E;
 }
-main .upcoming-events .button-more-events {
+.upcoming-events .button-more-events {
   width: 100%;
   margin-top: 100px;
   text-align: center;
 }
-main .upcoming-events .button-more-events a {
+.upcoming-events .button-more-events a {
   text-decoration: none;
   padding: 25px 45px;
   background-color: #EAD758;
@@ -605,39 +642,40 @@ main .upcoming-events .button-more-events a {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
   transition: 0.2s ease;
 }
-main .upcoming-events .button-more-events a:hover {
+.upcoming-events .button-more-events a:hover {
   background-color: #E56768;
   color: #fff;
 }
-main .latest-courses {
+
+.latest-courses {
   width: 100%;
   background: linear-gradient(180deg, #e56768 0.2%, white 0.2%);
   padding-bottom: 80px;
 }
-main .latest-courses .latest-courses-wave {
+.latest-courses .latest-courses-wave {
   width: 100%;
   overflow: hidden;
 }
-main .latest-courses .latest-courses-wave svg {
+.latest-courses .latest-courses-wave svg {
   transform: rotate(360deg);
 }
-main .latest-courses .courses-container {
+.latest-courses .courses-container {
   width: 80%;
   margin: auto;
 }
-main .latest-courses .courses-container h1 {
+.latest-courses .courses-container h1 {
   width: 100%;
   font-size: 45px;
   color: #3D414F;
   font-family: "Fredoka One", cursive;
   margin-bottom: 30px;
 }
-main .latest-courses .courses-container .course-info-container {
+.latest-courses .courses-container .course-info-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-main .latest-courses .courses-container .course-info-container .course-info {
+.latest-courses .courses-container .course-info-container .course-info {
   position: relative;
   display: flex;
   width: 300px;
@@ -651,7 +689,7 @@ main .latest-courses .courses-container .course-info-container .course-info {
   justify-content: center;
   align-items: center;
 }
-main .latest-courses .courses-container .course-info-container .course-info #button-view-more {
+.latest-courses .courses-container .course-info-container .course-info #button-view-more {
   text-align: center;
   position: absolute;
   width: 160px;
@@ -667,78 +705,79 @@ main .latest-courses .courses-container .course-info-container .course-info #but
   font-size: 14px;
   transition: 0.2s ease;
 }
-main .latest-courses .courses-container .course-info-container .course-info #button-view-more:hover {
+.latest-courses .courses-container .course-info-container .course-info #button-view-more:hover {
   background-color: #EAD758;
 }
-main .latest-courses .courses-container .course-info-container .course-info #button-view-more i {
+.latest-courses .courses-container .course-info-container .course-info #button-view-more i {
   margin-right: 5px;
 }
-main .latest-courses .courses-container .course-info-container .course-info img {
+.latest-courses .courses-container .course-info-container .course-info img {
   width: 72px;
   height: 70px;
   margin-bottom: 20px;
 }
-main .latest-courses .courses-container .course-info-container .course-info #title-course {
+.latest-courses .courses-container .course-info-container .course-info #title-course {
   text-decoration: none;
   font-size: 18px;
   color: #3D414F;
   font-family: "Fredoka One", cursive;
   margin-bottom: 20px;
 }
-main .latest-courses .courses-container .course-info-container .course-info .author {
+.latest-courses .courses-container .course-info-container .course-info .author {
   margin-bottom: 20px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
   font-size: 14px;
   color: #a6a6a7;
 }
-main .latest-courses .courses-container .course-info-container .course-info .author span {
+.latest-courses .courses-container .course-info-container .course-info .author span {
   color: #5C5E6C;
   font-weight: 700;
 }
-main .latest-courses .courses-container .course-info-container .course-info .price {
+.latest-courses .courses-container .course-info-container .course-info .price {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
   font-size: 14px;
   color: #a6a6a7;
   margin-bottom: 20px;
 }
-main .latest-courses .courses-container .course-info-container .course-info .price span {
+.latest-courses .courses-container .course-info-container .course-info .price span {
   color: #5C5E6C;
   font-weight: 700;
 }
-main .examination-method {
+
+.examination-method {
   width: 80%;
   height: 500px;
   margin: auto;
   display: flex;
   padding-bottom: 50px;
 }
-main .examination-method .examination-method-text {
+.examination-method .examination-method-text {
   width: 50%;
   height: 100%;
 }
-main .examination-method .examination-method-text .examination-method-text-icon {
+.examination-method .examination-method-text .examination-method-text-icon {
   width: 100%;
 }
-main .examination-method .examination-method-text .examination-method-text-icon img {
+.examination-method .examination-method-text .examination-method-text-icon img {
   width: 60px;
   margin-bottom: 20px;
 }
-main .examination-method .examination-method-text h1 {
+.examination-method .examination-method-text h1 {
   font-size: 45px;
   color: #3D414F;
   font-family: "Fredoka One", cursive;
   margin-bottom: 30px;
 }
-main .examination-method .examination-method-text p {
+.examination-method .examination-method-text p {
   width: 80%;
   line-height: 30px;
   font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 30px;
   color: #3D414F;
 }
-main .examination-method .examination-method-text a {
+.examination-method .examination-method-text a {
   text-decoration: none;
   display: inline-block;
   padding: 20px 45px;
@@ -750,19 +789,20 @@ main .examination-method .examination-method-text a {
   margin-bottom: 20px;
   transition: 0.2s ease;
 }
-main .examination-method .examination-method-text a:hover {
+.examination-method .examination-method-text a:hover {
   background-color: #EAD758;
 }
-main .examination-method .examination-method-img {
+.examination-method .examination-method-img {
   width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-main .examination-method .examination-method-img img {
+.examination-method .examination-method-img img {
   max-width: 500px;
 }
-main .variables-fees {
+
+.variables-fees {
   width: 80%;
   height: 500px;
   margin: auto;
@@ -770,40 +810,40 @@ main .variables-fees {
   padding-top: 50px;
   margin-bottom: 80px;
 }
-main .variables-fees .variables-fees-img {
+.variables-fees .variables-fees-img {
   width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-main .variables-fees .variables-fees-img img {
+.variables-fees .variables-fees-img img {
   max-width: 500px;
 }
-main .variables-fees .variables-fees-text {
+.variables-fees .variables-fees-text {
   width: 50%;
   height: 100%;
 }
-main .variables-fees .variables-fees-text .examination-method-text-icon {
+.variables-fees .variables-fees-text .examination-method-text-icon {
   width: 100%;
 }
-main .variables-fees .variables-fees-text .examination-method-text-icon img {
+.variables-fees .variables-fees-text .examination-method-text-icon img {
   width: 60px;
   margin-bottom: 20px;
 }
-main .variables-fees .variables-fees-text h1 {
+.variables-fees .variables-fees-text h1 {
   font-size: 45px;
   color: #3D414F;
   font-family: "Fredoka One", cursive;
   margin-bottom: 30px;
 }
-main .variables-fees .variables-fees-text p {
+.variables-fees .variables-fees-text p {
   width: 80%;
   line-height: 30px;
   font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 30px;
   color: #3D414F;
 }
-main .variables-fees .variables-fees-text a {
+.variables-fees .variables-fees-text a {
   text-decoration: none;
   display: inline-block;
   padding: 20px 45px;
@@ -815,21 +855,22 @@ main .variables-fees .variables-fees-text a {
   margin-bottom: 20px;
   transition: 0.2s ease;
 }
-main .variables-fees .variables-fees-text a:hover {
+.variables-fees .variables-fees-text a:hover {
   background-color: #EAD758;
 }
-main .newsletter {
+
+.newsletter {
   width: 100%;
   height: 180px;
   background-color: #E56768;
 }
-main .newsletter .newsletter-container {
+.newsletter .newsletter-container {
   width: 80%;
   height: 100%;
   margin: auto;
   display: flex;
 }
-main .newsletter .newsletter-container .cta-newsletter {
+.newsletter .newsletter-container .cta-newsletter {
   width: 60%;
   height: 100%;
   display: flex;
@@ -839,14 +880,14 @@ main .newsletter .newsletter-container .cta-newsletter {
   color: #fff;
   font-family: "Fredoka One", cursive;
 }
-main .newsletter .newsletter-container .newsletter-input-container {
+.newsletter .newsletter-container .newsletter-input-container {
   width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   position: relative;
 }
-main .newsletter .newsletter-container .newsletter-input-container input {
+.newsletter .newsletter-container .newsletter-input-container input {
   display: block;
   width: 90%;
   height: 70px;
@@ -857,7 +898,7 @@ main .newsletter .newsletter-container .newsletter-input-container input {
   outline: none;
   font-family: "Source Sans Pro", sans-serif;
 }
-main .newsletter .newsletter-container .newsletter-input-container button {
+.newsletter .newsletter-container .newsletter-input-container button {
   position: absolute;
   right: 20px;
   height: 75px;
@@ -871,28 +912,29 @@ main .newsletter .newsletter-container .newsletter-input-container button {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
   transition: 0.2s ease;
 }
-main .newsletter .newsletter-container .newsletter-input-container button i {
+.newsletter .newsletter-container .newsletter-input-container button i {
   font-size: 20px;
 }
-main .newsletter .newsletter-container .newsletter-input-container button:hover {
+.newsletter .newsletter-container .newsletter-input-container button:hover {
   background-color: #E56768;
   cursor: pointer;
 }
-main .partners {
+
+.partners {
   width: 100%;
   height: 580px;
   background-image: url(/images/curva-grigia-580px.png?7505e161d7c04b44c6d7cfe17d60796d);
   background-size: cover;
   background-repeat: no-repeat;
 }
-main .partners h1 {
+.partners h1 {
   padding: 50px 0;
   text-align: center;
   font-size: 45px;
   font-family: "Fredoka One", cursive;
   color: #3D414F;
 }
-main .partners p {
+.partners p {
   width: 50%;
   margin: auto;
   text-align: center;
@@ -900,17 +942,17 @@ main .partners p {
   font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 30px;
 }
-main .partners .partners-logo-container {
+.partners .partners-logo-container {
   width: 80%;
   height: 50px;
   margin: auto;
 }
-main .partners .partners-logo-container .logo-partner {
+.partners .partners-logo-container .logo-partner {
   display: inline-block;
   width: calc(100% / 8);
   height: 100%;
 }
-main .partners .partners-logo-container .logo-partner img {
+.partners .partners-logo-container .logo-partner img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -919,10 +961,10 @@ main .partners .partners-logo-container .logo-partner img {
      object-position: center;
   opacity: 0.5;
 }
-main .partners .partners-logo-container .logo-partner:hover {
+.partners .partners-logo-container .logo-partner:hover {
   cursor: pointer;
 }
-main .partners .partners-logo-container .logo-partner:hover img {
+.partners .partners-logo-container .logo-partner:hover img {
   opacity: 1;
 }
 
