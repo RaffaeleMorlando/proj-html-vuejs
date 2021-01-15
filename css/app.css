@@ -21,32 +21,41 @@ header .background-overlay {
   height: 100%;
   background-color: rgba(218, 95, 96, 0.902);
 }
-header .header-navbar {
+header .container-clouds {
+  height: 130px;
+  width: 100%;
+  background-image: url(/images/Wave-1.png?7dfbc50abe80bc3c0a80f3267bdc1c6f);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.header-navbar {
   width: 100%;
   height: 160px;
   display: flex;
   padding: 30px 50px;
   font-family: "Fredoka One", cursive;
 }
-header .header-navbar__logo-container {
+.header-navbar__logo-container {
   width: 20%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-header .header-navbar__logo-container img {
+.header-navbar__logo-container img {
   width: 270px;
 }
-header .header-navbar__link-section {
+.header-navbar__link-section {
   width: 80%;
   height: 100%;
   display: flex;
 }
-header .header-navbar__link-section .links {
+.header-navbar__link-section .links {
   width: 80%;
   height: 100%;
 }
-header .header-navbar__link-section .links ul {
+.header-navbar__link-section .links ul {
   list-style: none;
   display: flex;
   justify-content: flex-end;
@@ -54,7 +63,7 @@ header .header-navbar__link-section .links ul {
   width: 100%;
   height: 100%;
 }
-header .header-navbar__link-section .links ul li {
+.header-navbar__link-section .links ul li {
   position: relative;
   display: flex;
   align-items: center;
@@ -62,30 +71,30 @@ header .header-navbar__link-section .links ul li {
   margin-right: 30px;
   color: #fff;
 }
-header .header-navbar__link-section .links ul li a {
+.header-navbar__link-section .links ul li a {
   text-decoration: none;
   font-size: 17px;
   color: #fff;
 }
-header .header-navbar__link-section .links ul li i {
+.header-navbar__link-section .links ul li i {
   margin-left: 10px;
   font-size: 15px;
 }
-header .header-navbar__link-section .links ul li:hover {
+.header-navbar__link-section .links ul li:hover {
   color: #EAD758;
 }
-header .header-navbar__link-section .links ul li:hover a {
+.header-navbar__link-section .links ul li:hover a {
   color: #EAD758;
 }
-header .header-navbar__link-section .links ul li:first-child {
+.header-navbar__link-section .links ul li:first-child {
   color: #EAD758;
 }
-header .header-navbar__link-section .links ul li:first-child a {
+.header-navbar__link-section .links ul li:first-child a {
   text-decoration: none;
   font-size: 17px;
   color: #EAD758;
 }
-header .header-navbar__link-section .links ul .dropdown-container {
+.header-navbar__link-section .links ul .dropdown-container {
   position: absolute;
   bottom: -160px;
   width: 200px;
@@ -94,10 +103,10 @@ header .header-navbar__link-section .links ul .dropdown-container {
   z-index: 1;
   box-shadow: 0 0 20px rgba(67, 73, 89, 0.1);
 }
-header .header-navbar__link-section .links ul .dropdown-container .animate__animated.animate__fadeInUp {
+.header-navbar__link-section .links ul .dropdown-container .animate__animated.animate__fadeInUp {
   --animate-duration: 1s;
 }
-header .header-navbar__link-section .links ul .dropdown-container ul {
+.header-navbar__link-section .links ul .dropdown-container ul {
   width: 100%;
   list-style: none;
   display: flex;
@@ -105,7 +114,7 @@ header .header-navbar__link-section .links ul .dropdown-container ul {
   align-items: center;
   padding: 10px 10px;
 }
-header .header-navbar__link-section .links ul .dropdown-container ul li {
+.header-navbar__link-section .links ul .dropdown-container ul li {
   width: 100%;
   margin: 0;
   position: relative;
@@ -116,18 +125,18 @@ header .header-navbar__link-section .links ul .dropdown-container ul li {
   padding: 5px 10px;
   transition: 0.2s ease;
 }
-header .header-navbar__link-section .links ul .dropdown-container ul li:hover {
+.header-navbar__link-section .links ul .dropdown-container ul li:hover {
   color: #E56768;
   cursor: pointer;
 }
-header .header-navbar__link-section .navbar-button {
+.header-navbar__link-section .navbar-button {
   width: 20%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-header .header-navbar__link-section .navbar-button a {
+.header-navbar__link-section .navbar-button a {
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -144,18 +153,19 @@ header .header-navbar__link-section .navbar-button a {
   text-transform: uppercase;
   transition: 0.5s ease-in-out;
 }
-header .header-navbar__link-section .navbar-button a:hover {
+.header-navbar__link-section .navbar-button a:hover {
   background-color: #fff;
   border: 1px solid #fff;
   color: #E56768;
 }
-header .hero {
+
+.hero {
   position: relative;
   display: flex;
   width: 100%;
   height: calc(100% - 290px);
 }
-header .hero__left-bar {
+.hero__left-bar {
   position: fixed;
   left: 0;
   top: 50%;
@@ -174,11 +184,11 @@ header .hero__left-bar {
   z-index: 1;
   transition: 0.5s ease-in-out;
 }
-header .hero__left-bar:hover {
+.hero__left-bar:hover {
   width: 50px;
   cursor: pointer;
 }
-header .hero .arrow-left, header .hero .arrow-right {
+.hero .arrow-left, .hero .arrow-right {
   width: 25%;
   height: 100%;
   display: flex;
@@ -189,13 +199,13 @@ header .hero .arrow-left, header .hero .arrow-right {
   font-size: 40px;
   cursor: pointer;
 }
-header .hero .arrow-left .fade-enter-active, header .hero .arrow-left .fade-leave-active, header .hero .arrow-right .fade-enter-active, header .hero .arrow-right .fade-leave-active {
+.hero .arrow-left .fade-enter-active, .hero .arrow-left .fade-leave-active, .hero .arrow-right .fade-enter-active, .hero .arrow-right .fade-leave-active {
   transition: opacity 0.5s;
 }
-header .hero .arrow-left .fade-enter, header .hero .arrow-left .fade-leave-to, header .hero .arrow-right .fade-enter, header .hero .arrow-right .fade-leave-to {
+.hero .arrow-left .fade-enter, .hero .arrow-left .fade-leave-to, .hero .arrow-right .fade-enter, .hero .arrow-right .fade-leave-to {
   opacity: 0;
 }
-header .hero .center {
+.hero .center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,12 +214,12 @@ header .hero .center {
   height: 100%;
   text-align: center;
 }
-header .hero .center h1 {
+.hero .center h1 {
   font-size: 60px;
   color: #fff;
   font-family: "Fredoka One", cursive;
 }
-header .hero .center p {
+.hero .center p {
   margin: 30px 0;
   padding: 0px 10px;
   font-family: "Source Sans Pro", sans-serif;
@@ -217,7 +227,7 @@ header .hero .center p {
   line-height: 30px;
   font-size: 22px;
 }
-header .hero .center .buttons {
+.hero .center .buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -225,7 +235,7 @@ header .hero .center .buttons {
   width: 100%;
   height: 100px;
 }
-header .hero .center .buttons a {
+.hero .center .buttons a {
   display: inline-block;
   padding: 20px 45px;
   border-radius: 50px;
@@ -235,34 +245,26 @@ header .hero .center .buttons a {
   font-family: "Fredoka One", cursive;
   transition: 0.5s ease-in-out;
 }
-header .hero .center .buttons a i {
+.hero .center .buttons a i {
   padding-right: 10px;
 }
-header .hero .center .buttons a:first-child {
+.hero .center .buttons a:first-child {
   background-color: #EAD758;
   color: #fff;
 }
-header .hero .center .buttons a:first-child:hover {
+.hero .center .buttons a:first-child:hover {
   background-color: #fff;
   color: #E56768;
   cursor: pointer;
 }
-header .hero .center .buttons a:last-child {
+.hero .center .buttons a:last-child {
   background-color: #fff;
   color: #E56768;
 }
-header .hero .center .buttons a:last-child:hover {
+.hero .center .buttons a:last-child:hover {
   background-color: #EAD758;
   color: #fff;
   cursor: pointer;
-}
-header .container-clouds {
-  height: 130px;
-  width: 100%;
-  background-image: url(/images/Wave-1.png?7dfbc50abe80bc3c0a80f3267bdc1c6f);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
 }
 
 main {
@@ -380,6 +382,8 @@ main {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  pointer-events: none;
+  cursor: pointer;
 }
 .faculties__container-box .faculty a img {
   width: 40%;
@@ -402,8 +406,8 @@ main {
 }
 .faculties__container-box .faculty:first-child .arrow-down-select {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 47%;
+  transform: translateX(-47%);
   bottom: -10px;
   width: 20px;
   height: 20px;

@@ -35,23 +35,33 @@ const app = new Vue(
       faculties: [
         {
           'img':'img/Gavel-v2.png',
-          'title': 'Law Faculty'
+          'title': 'Law Faculty',
+          'second-img': 'img/Gavel-Illustration-e1556884768193.png',
+          'para': 'Learning from world-leading academics and practitioners, you’ll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.'
         },
         {
           'img': 'img/Coins-tabs-v2.png',
-          'title': 'Economy'
+          'title': 'Economy',
+          'second-img': 'img/Economy.png',
+          'para': 'Economics focuses on the behaviour and interactions of economic agents and how economies work. Microeconomics analyzes basic elements in the economy, including individual agents and markets, their interactions, and the outcomes of interactions, including unemployment of resource.'
         },
         {
           'img': 'img/Medicine-tabs-v2.png',
-          'title': 'Medicine'
+          'title': 'Medicine',
+          'second-img': 'img/Medicine.png',
+          'para': 'Medicine is the science and practice of establishing the diagnosis, prognosis, treatment, and prevention of disease. Medicine encompasses a variety of health care practices evolved to maintain and restore health by the prevention and treatment of illness.'
         },
         {
           'img': 'img/Computer-tabs-v2.png',
-          'title': 'Computer Science'
+          'title': 'Computer Science',
+          'second-img': 'img/Computer-Science.png',
+          'para': 'Computer science is the study of processes that interact with data and that can be represented as data in the form of programs. It enables the use of algorithms to manipulate, store, and communicate digital information. A computer scientist studies the theory of computation software systems.'
         },
         {
           'img': 'img/Palette-tabs-v2.png',
-          'title': 'Graphic Design'
+          'title': 'Graphic Design',
+          'second-img': 'img/Graphic-Design.png',
+          'para': 'Graphic design is the process of visual communication and problem-solving through the use of typography, photography and illustration. The field is considered a subset of visual communication and communication design, but sometimes the term ``graphic design`` is used synonymously.'
         }
       ],
       latestCourse: [
@@ -137,7 +147,8 @@ const app = new Vue(
       dropdownOpen: false,
       animation: 'animate__animated animate__fadeOutDown dropdown-container',
       currentItem: null,
-      showArrow: false
+      showArrow: false,
+      faculty: ['law','economy','medicine','computer science','graphics']
     },
     methods: {
       slideLeft: function() {
