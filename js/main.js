@@ -128,12 +128,12 @@ const app = new Vue(
         {
           'background':'img/theme_slider2_bg-1.jpg',
           'title': 'Key to your success',
-          'para': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perferendis, dolorum quas odio expedita doloremque?'
+          'para': ' Cupiditate tempore, laborum quasi culpa provident reiciendis sapiente tenetur sed, iste, repudiandae iusto.'
         },
         {
           'background': 'img/theme_slider3_bg-1.jpg',
           'title': 'Lead.Inspire.Win!',
-          'para': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perferendis, dolorum quas odio expedita doloremque?'
+          'para': 'Nobis perspiciatis veritatis deserunt ab impedit, sed nisi nemo quasi laudantium, ipsum, in quaerat ad eaque sapiente autem eius possimus amet accusamus voluptatibus!'
         }
       ],
       dropdownList: [
@@ -148,7 +148,6 @@ const app = new Vue(
       animation: 'animate__animated animate__fadeOutDown dropdown-container',
       currentItem: null,
       showArrow: false,
-      faculty: ['law','economy','medicine','computer science','graphics']
     },
     methods: {
       slideLeft: function() {
@@ -169,7 +168,7 @@ const app = new Vue(
         this.currentItem = index;
         this.dropdownOpen = true;
         this.animation = 'animate__animated animate__fadeInUp dropdown-container';
-      },
+      }
     }
   }
 );

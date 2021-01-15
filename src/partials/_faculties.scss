@@ -47,7 +47,7 @@
                 }
             }
         }
-        .faculty:first-child {
+        .faculty:nth-child(1) {
             position: relative;
             background-color: $pinkPrimary;
             img {
@@ -67,7 +67,6 @@
                 transform: rotate(45deg);
             }
         }
-        
     }
     .faculty-info-container {
         width: 60%;

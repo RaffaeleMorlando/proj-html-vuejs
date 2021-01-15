@@ -111,7 +111,7 @@
                 <p>A single university with a load of courses, tailored to satisfy any student’s needs.</p>
 
                 <div class="faculties__container-box">
-                    <div v-for="item in faculties" class="faculty">
+                    <div v-for="(item) in faculties" class=" faculty">
                         <a href="#">
                             <img :src="item.img" alt="">
                             <span>{{item.title}}</span>
